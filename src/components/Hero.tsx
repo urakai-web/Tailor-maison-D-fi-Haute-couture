@@ -32,20 +32,20 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden">
+    <section className="relative h-screen min-h-[600px] overflow-hidden bg-gray-900">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ${
             index === current ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* Hero image */}
+          {/* Hero image — object-contain で全体表示 */}
           <img
             src={slide.image}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
 
           {/* Overlay */}
