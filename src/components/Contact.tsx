@@ -1,0 +1,94 @@
+import { useEffect, useRef } from "react";
+
+export default function Contact() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      },
+      { threshold: 0.2 }
+    );
+    ref.current?.querySelectorAll(".fade-in-up").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      id="contact"
+      ref={ref}
+      className="py-24 md:py-32 relative overflow-hidden"
+    >
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/contact-bg.png"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <div className="fade-in-up">
+          <p className="text-xs tracking-widest text-white/60 uppercase mb-4">
+            Contact Us
+          </p>
+          <h2 className="text-3xl md:text-4xl font-serif font-light text-white mb-6">
+            まずは気軽にご相談ください
+          </h2>
+          <p className="text-white/80 text-sm leading-relaxed max-w-xl mx-auto">
+            家づくりのこと、土地探しのこと、資金計画のことなど、どんな小さなことでもお気軽にお問い合わせください。無料相談会も随時開催しています。
+          </p>
+        </div>
+
+        <div className="fade-in-up mt-12 grid md:grid-cols-2 gap-6">
+          {/* Phone */}
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 text-white">
+            <p className="text-xs tracking-widest text-white/60 uppercase mb-3">
+              Phone
+            </p>
+            <a
+              href="tel:0762000000"
+              className="text-3xl font-light tracking-wider hover:text-accent transition-colors"
+            >
+              076-200-0000
+            </a>
+            <p className="text-xs text-white/60 mt-3">
+              受付時間：9:00〜17:30（水曜定休）
+            </p>
+          </div>
+
+          {/* Web form */}
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 text-white flex flex-col items-center justify-center">
+            <p className="text-xs tracking-widest text-white/60 uppercase mb-3">
+              Web Form
+            </p>
+            <p className="text-sm text-white/80 mb-6">
+              24時間受付中。お気軽にどうぞ。
+            </p>
+            <a
+              href="#contact"
+              className="inline-block bg-white text-primary-dark text-xs tracking-widest px-10 py-3 hover:bg-accent hover:text-white transition-colors duration-300"
+            >
+              お問い合わせフォームへ
+            </a>
+          </div>
+        </div>
+
+        {/* Events */}
+        <div className="fade-in-up mt-10">
+          <a
+            href="#contact"
+            className="inline-block border border-white/40 text-white text-xs tracking-widest px-10 py-3 hover:border-white hover:bg-white/10 transition-all duration-300"
+          >
+            無料相談会・見学会の予約はこちら
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
