@@ -17,35 +17,34 @@ export default function Contact() {
   }, []);
 
   return (
-    <section
-      id="contact"
-      ref={ref}
-      className="py-24 md:py-32 relative overflow-hidden"
-    >
-      {/* Background image */}
-      <div className="absolute inset-0">
+    <section id="contact" ref={ref} className="relative bg-gray-900 py-20 md:py-32 overflow-hidden">
+      {/* 背景画像: object-contain でデバイス幅に合わせて全体表示 */}
+      <div className="absolute inset-0 flex items-center justify-center">
         <img
           src="/images/contact-bg.png"
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain opacity-80"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
+      {/* コンテンツ */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="fade-in-up">
           <p className="text-xs tracking-widest text-white/60 uppercase mb-4">
             Contact Us
           </p>
           <h2 className="text-3xl md:text-4xl font-serif font-light text-white mb-6">
-            まずは気軽にご相談ください
+            まずは気軽に
+            <br />
+            ご相談ください
           </h2>
           <p className="text-white/80 text-sm leading-relaxed max-w-xl mx-auto">
             家づくりのこと、土地探しのこと、資金計画のことなど、どんな小さなことでもお気軽にお問い合わせください。無料相談会も随時開催しています。
           </p>
         </div>
 
-        <div className="fade-in-up mt-12 grid md:grid-cols-2 gap-6">
+        <div className="fade-in-up mt-10 grid md:grid-cols-2 gap-6">
           {/* Phone */}
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 text-white">
             <p className="text-xs tracking-widest text-white/60 uppercase mb-3">
@@ -79,8 +78,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Events */}
-        <div className="fade-in-up mt-10">
+        <div className="fade-in-up mt-8">
           <a
             href="#contact"
             className="inline-block border border-white/40 text-white text-xs tracking-widest px-10 py-3 hover:border-white hover:bg-white/10 transition-all duration-300"
