@@ -61,7 +61,7 @@ export default function Hero() {
         <h1 className="text-3xl md:text-5xl font-serif font-light leading-relaxed mb-6 whitespace-pre-line hero-slide">
           {slides[current].catchcopy}
         </h1>
-        <p className="text-sm md:text-base opacity-80 max-w-md leading-relaxed">
+        <p className="text-sm md:text-base opacity-80 max-w-md leading-relaxed whitespace-nowrap">
           {slides[current].sub}
         </p>
         <a
