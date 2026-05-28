@@ -63,25 +63,6 @@ export default function Concept() {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="fade-in-up mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-warm-200 pt-16">
-          {[
-            { num: "1998", unit: "年", label: "創業" },
-            { num: "350", unit: "棟+", label: "施工実績" },
-            { num: "UA値\n0.46", unit: "", label: "最高断熱基準" },
-            { num: "30", unit: "年", label: "長期保証" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl md:text-4xl font-serif font-light text-primary whitespace-pre-line">
-                {stat.num}
-                <span className="text-lg">{stat.unit}</span>
-              </div>
-              <div className="text-xs text-gray-500 tracking-widest mt-2">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
