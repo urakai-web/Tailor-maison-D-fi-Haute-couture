@@ -1,27 +1,30 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/Concept";
-import LineUp from "./components/Features";
-import Fabric from "./components/News";
-import Guide from "./components/Guide";
-import Case from "./components/Works";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import TopPage from "./pages/TopPage";
+import LineUpPage from "./pages/LineUpPage";
+import FabricPage from "./pages/FabricPage";
+import GuidePage from "./pages/GuidePage";
+import CasePage from "./pages/CasePage";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <LineUp />
-        <Fabric />
-        <Guide />
-        <Case />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <div className="min-h-screen">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<TopPage />} />
+            <Route path="/lineup" element={<LineUpPage />} />
+            <Route path="/fabric" element={<FabricPage />} />
+            <Route path="/guide" element={<GuidePage />} />
+            <Route path="/case" element={<CasePage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }

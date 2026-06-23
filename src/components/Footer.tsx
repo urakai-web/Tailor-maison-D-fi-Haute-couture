@@ -1,24 +1,26 @@
+import { Link } from "react-router-dom";
+
 const footerNav = [
   {
     heading: "About",
     links: [
-      { label: "経営理念", href: "#about" },
-      { label: "私たちについて", href: "#about" },
-      { label: "オーナー経歴", href: "#about" },
+      { label: "経営理念", href: "/#about" },
+      { label: "私たちについて", href: "/#about" },
+      { label: "オーナー経歴", href: "/#about" },
     ],
   },
   {
     heading: "Service",
     links: [
-      { label: "ラインナップ", href: "#lineup" },
-      { label: "ファブリック", href: "#fabric" },
-      { label: "ご注文ガイド", href: "#guide" },
+      { label: "ラインナップ", href: "/lineup" },
+      { label: "ファブリック", href: "/fabric" },
+      { label: "ご注文ガイド", href: "/guide" },
     ],
   },
   {
     heading: "Gallery",
     links: [
-      { label: "仕立て事例", href: "#case" },
+      { label: "仕立て事例", href: "/case" },
       { label: "Instagram", href: "https://www.instagram.com/" },
     ],
   },
@@ -79,12 +81,30 @@ export default function Footer() {
               <ul className="space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm hover:text-white transition-colors"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href.startsWith("http") ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ) : link.href.startsWith("/#") ? (
+                      <a
+                        href={link.href}
+                        className="text-sm hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.href}
+                        className="text-sm hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
