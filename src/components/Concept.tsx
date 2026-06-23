@@ -75,7 +75,7 @@ export default function About() {
                 <img
                   src="/images/owner.jpg"
                   alt="オーナー"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-accent -z-10" />
