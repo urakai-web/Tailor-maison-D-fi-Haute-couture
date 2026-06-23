@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const slides = [
   {
     id: 1,
-    image: "/images/hero-01.png",
+    image: "/images/hero-01.jpg",
     catchcopy: "挑戦の数だけ、\n物語がある。",
     sub: "テーラードファッションを通して、挑戦する人の『覚悟』をカタチにする",
   },
@@ -15,7 +15,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/images/hero-03.png",
+    image: "/images/hero-03.jpg",
     catchcopy: "あなたの『目的』に\n寄り添う仕立て。",
     sub: "福岡の出張型オーダースーツサロン Tailor maison Défi",
   },
