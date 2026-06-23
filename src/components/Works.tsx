@@ -1,12 +1,12 @@
 import { useEffect, useRef } from "react";
 
 const cases = [
-  { id: 1, image: "/images/works-01.png", title: "ビジネススーツ", tag: "Suit" },
-  { id: 2, image: "/images/works-02.png", title: "フォーマルスーツ", tag: "Suit" },
-  { id: 3, image: "/images/works-03.png", title: "オーダーシャツ", tag: "Shirt" },
-  { id: 4, image: "/images/works-04.png", title: "カジュアルセットアップ", tag: "Suit" },
-  { id: 5, image: "/images/works-05.png", title: "オーダーコート", tag: "Coat" },
-  { id: 6, image: "/images/works-06.png", title: "ウェディングスーツ", tag: "Suit" },
+  { id: 1, image: "/images/case-placeholder.jpg", title: "ビジネススーツ", tag: "Suit" },
+  { id: 2, image: "/images/case-placeholder.jpg", title: "フォーマルスーツ", tag: "Suit" },
+  { id: 3, image: "/images/case-placeholder.jpg", title: "オーダーシャツ", tag: "Shirt" },
+  { id: 4, image: "/images/case-placeholder.jpg", title: "カジュアルセットアップ", tag: "Suit" },
+  { id: 5, image: "/images/case-placeholder.jpg", title: "オーダーコート", tag: "Coat" },
+  { id: 6, image: "/images/case-placeholder.jpg", title: "ウェディングスーツ", tag: "Suit" },
 ];
 
 export default function Case() {
