@@ -66,7 +66,7 @@ export default function Case() {
 
         <div className="text-center mt-12 fade-in-up">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/yuma.nishinami"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline text-xs"

@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { label: "私たちについて", href: "/#about" },
-  { label: "ラインナップ", href: "/lineup" },
-  { label: "ファブリック", href: "/fabric" },
+  { label: "Line Up", href: "/lineup" },
+  { label: "Fabric", href: "/fabric" },
   { label: "ご注文ガイド", href: "/guide" },
   { label: "仕立て事例", href: "/case" },
 ];
@@ -74,7 +74,7 @@ export default function Header() {
             )
           )}
           <a
-            href="https://line.me/"
+            href="https://lin.ee/W2TBswv"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm tracking-widest bg-primary text-white px-6 py-2.5 hover:bg-primary-dark transition-colors duration-300"
@@ -136,7 +136,7 @@ export default function Header() {
             )
           )}
           <a
-            href="https://line.me/"
+            href="https://lin.ee/W2TBswv"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}

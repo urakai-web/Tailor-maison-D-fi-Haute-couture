@@ -21,7 +21,7 @@ const footerNav = [
     heading: "Gallery",
     links: [
       { label: "仕立て事例", href: "/case" },
-      { label: "Instagram", href: "https://www.instagram.com/" },
+      { label: "Instagram", href: "https://www.instagram.com/yuma.nishinami" },
     ],
   },
 ];
@@ -52,7 +52,7 @@ export default function Footer() {
             {/* SNS */}
             <div className="flex gap-4 mt-6">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/yuma.nishinami"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -61,7 +61,7 @@ export default function Footer() {
                 IG
               </a>
               <a
-                href="https://line.me/"
+                href="https://lin.ee/W2TBswv"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LINE"
