@@ -5,19 +5,19 @@ const slides = [
     id: 1,
     image: "/images/hero-01.jpg",
     catchcopy: "挑戦の数だけ、\n物語がある。",
-    sub: "テーラードファッションを通して、挑戦する人の『覚悟』をカタチにする",
+    sub: "テーラードファッションを通して、\n挑戦する人の『覚悟』をカタチにする",
   },
   {
     id: 2,
     image: "/images/hero-02.png",
     catchcopy: "凛と、美しく。\n洗練された一着を。",
-    sub: "イタリア・イギリスの上質なファブリックで仕立てる、あなただけのスーツ",
+    sub: "イタリア・イギリスの上質なファブリックで仕立てる、\nあなただけのスーツ",
   },
   {
     id: 3,
     image: "/images/hero-03.jpg",
     catchcopy: "あなたの『目的』に\n寄り添う仕立て。",
-    sub: "福岡の出張型オーダースーツサロン Tailor maison Défi",
+    sub: "福岡の出張型オーダースーツサロン\nTailor maison Défi",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function Hero() {
         <h1 className="text-3xl md:text-5xl font-serif font-light leading-relaxed mb-6 whitespace-pre-line hero-slide">
           {slides[current].catchcopy}
         </h1>
-        <p className="text-sm md:text-base opacity-80 max-w-md leading-relaxed">
+        <p className="text-sm md:text-base opacity-80 max-w-md leading-relaxed whitespace-pre-line">
           {slides[current].sub}
         </p>
         <a
