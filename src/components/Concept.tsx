@@ -38,7 +38,7 @@ export default function About() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/images/concept.png"
+                src="/images/aboutme.jpg"
                 alt="Tailor maison Défi サロン"
                 className="w-full h-full object-cover"
               />
