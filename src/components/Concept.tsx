@@ -25,7 +25,7 @@ export default function About() {
           <p className="text-xs tracking-widest text-primary uppercase mb-3">
             Philosophy
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-light leading-relaxed text-gray-800 mb-8">
+          <h2 className="text-2xl md:text-4xl font-serif font-light leading-relaxed text-gray-800 mb-8 whitespace-nowrap">
             挑戦の数だけ、物語がある。
           </h2>
           <p className="text-sm text-gray-600 leading-relaxed max-w-2xl mx-auto">
