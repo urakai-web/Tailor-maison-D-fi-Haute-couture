@@ -49,27 +49,6 @@ export default function Footer() {
               <p>完全予約制</p>
             </div>
 
-            {/* SNS */}
-            <div className="flex gap-4 mt-6">
-              <a
-                href="https://www.instagram.com/yuma.nishinami"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
-              >
-                IG
-              </a>
-              <a
-                href="https://lin.ee/W2TBswv"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LINE"
-                className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
-              >
-                LINE
-              </a>
-            </div>
           </div>
 
           {/* Nav columns */}
