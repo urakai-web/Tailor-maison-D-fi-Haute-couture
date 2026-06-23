@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 
 const navItems = [
   { label: "私たちについて", href: "#about" },
-  { label: "家づくりのこだわり", href: "#features" },
-  { label: "施工事例", href: "#works" },
-  { label: "お知らせ", href: "#news" },
-  { label: "お問い合わせ", href: "#contact" },
+  { label: "ラインナップ", href: "#lineup" },
+  { label: "ファブリック", href: "#fabric" },
+  { label: "ご注文ガイド", href: "#guide" },
+  { label: "仕立て事例", href: "#case" },
 ];
 
 export default function Header() {
@@ -28,24 +28,24 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex flex-col leading-none group">
           <span
-            className={`text-xl font-serif font-light tracking-widest transition-colors duration-300 ${
+            className={`text-lg font-serif font-light tracking-widest transition-colors duration-300 ${
               isScrolled ? "text-primary-dark" : "text-white"
             }`}
           >
-            金沢建築設計
+            Tailor maison Défi
           </span>
           <span
-            className={`text-[10px] tracking-widest mt-0.5 transition-colors duration-300 ${
+            className={`text-[9px] tracking-widest mt-0.5 transition-colors duration-300 ${
               isScrolled ? "text-gray-500" : "text-white/80"
             }`}
           >
-            KANAZAWA ARCHITECTURE DESIGN
+            HAUTE COUTURE
           </span>
         </a>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
-          {navItems.slice(0, -1).map((item) => (
+          {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
@@ -57,10 +57,12 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://line.me/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm tracking-widest bg-primary text-white px-6 py-2.5 hover:bg-primary-dark transition-colors duration-300"
           >
-            お問い合わせ
+            LINE予約
           </a>
         </nav>
 
@@ -105,6 +107,15 @@ export default function Header() {
               {item.label}
             </a>
           ))}
+          <a
+            href="https://line.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMenuOpen(false)}
+            className="text-sm text-primary font-medium py-2 tracking-wide"
+          >
+            LINE予約
+          </a>
         </nav>
       </div>
     </header>

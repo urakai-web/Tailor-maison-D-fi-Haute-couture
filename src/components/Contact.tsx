@@ -28,63 +28,37 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      {/* コンテンツ */}
+      {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="fade-in-up">
           <p className="text-xs tracking-widest text-white/60 uppercase mb-4">
-            Contact Us
+            Contact
           </p>
           <h2 className="text-3xl md:text-4xl font-serif font-light text-white mb-6">
-            まずは気軽に
+            まずはお気軽に
             <br />
             ご相談ください
           </h2>
           <p className="text-white/80 text-sm leading-relaxed max-w-xl mx-auto">
-            家づくりのこと、土地探しのこと、資金計画のことなど、どんな小さなことでもお気軽にお問い合わせください。無料相談会も随時開催しています。
+            オーダースーツが初めての方も、お気軽にご相談ください。ご予算やご要望をお伺いしながら、最適なご提案をさせていただきます。
           </p>
         </div>
 
-        <div className="fade-in-up mt-10 grid md:grid-cols-2 gap-6">
-          {/* Phone */}
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 text-white">
-            <p className="text-xs tracking-widest text-white/60 uppercase mb-3">
-              Phone
-            </p>
-            <a
-              href="tel:0762000000"
-              className="text-3xl font-light tracking-wider hover:text-accent transition-colors"
-            >
-              076-200-0000
-            </a>
-            <p className="text-xs text-white/60 mt-3">
-              受付時間：9:00〜17:30（水曜定休）
-            </p>
-          </div>
-
-          {/* Web form */}
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 text-white flex flex-col items-center justify-center">
-            <p className="text-xs tracking-widest text-white/60 uppercase mb-3">
-              Web Form
-            </p>
-            <p className="text-sm text-white/80 mb-6">
-              24時間受付中。お気軽にどうぞ。
-            </p>
-            <a
-              href="#contact"
-              className="inline-block bg-white text-primary-dark text-xs tracking-widest px-10 py-3 hover:bg-accent hover:text-white transition-colors duration-300"
-            >
-              お問い合わせフォームへ
-            </a>
-          </div>
-        </div>
-
-        <div className="fade-in-up mt-8">
+        <div className="fade-in-up mt-10">
           <a
-            href="#contact"
-            className="inline-block border border-white/40 text-white text-xs tracking-widest px-10 py-3 hover:border-white hover:bg-white/10 transition-all duration-300"
+            href="https://line.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#06C755] text-white text-sm tracking-widest px-12 py-4 hover:bg-[#05b04c] transition-colors duration-300"
           >
-            無料相談会・見学会の予約はこちら
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+            </svg>
+            LINEで予約・相談する
           </a>
+          <p className="text-white/50 text-xs mt-4">
+            24時間受付中。お気軽にどうぞ。
+          </p>
         </div>
       </div>
     </section>

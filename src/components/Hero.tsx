@@ -4,20 +4,20 @@ const slides = [
   {
     id: 1,
     image: "/images/hero-01.png",
-    catchcopy: "家族にちょうどいい、\nわたしたちだけの家。",
-    sub: "数十年先も続く、家族にも環境にも心地よい住まい",
+    catchcopy: "挑戦の数だけ、\n物語がある。",
+    sub: "テーラードファッションを通して、挑戦する人の『覚悟』をカタチにする",
   },
   {
     id: 2,
     image: "/images/hero-02.png",
-    catchcopy: "自然素材が育む、\n温かみのある暮らし。",
-    sub: "無垢材と漆喰が織りなす、時を重ねるほど味わい深まる空間",
+    catchcopy: "凛と、美しく。\n洗練された一着を。",
+    sub: "イタリア・イギリスの上質なファブリックで仕立てる、あなただけのスーツ",
   },
   {
     id: 3,
     image: "/images/hero-03.png",
-    catchcopy: "省エネで、冬暖かく、\n夏は涼しい住まい。",
-    sub: "最高水準の断熱性能で、光熱費を抑えながら快適な毎日を",
+    catchcopy: "あなたの『目的』に\n寄り添う仕立て。",
+    sub: "福岡の出張型オーダースーツサロン Tailor maison Défi",
   },
 ];
 
@@ -41,14 +41,11 @@ export default function Hero() {
             index === current ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* Hero image */}
           <img
             src={slide.image}
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
-
-          {/* Overlay */}
           <div className="absolute inset-0 bg-black/40" />
         </div>
       ))}
@@ -56,19 +53,19 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
         <p className="text-xs tracking-widest3 mb-6 opacity-80">
-          KANAZAWA ARCHITECTURE DESIGN
+          TAILOR MAISON DÉFI HAUTE COUTURE
         </p>
         <h1 className="text-3xl md:text-5xl font-serif font-light leading-relaxed mb-6 whitespace-pre-line hero-slide">
           {slides[current].catchcopy}
         </h1>
-        <p className="text-sm md:text-base opacity-80 max-w-md leading-relaxed whitespace-nowrap">
+        <p className="text-sm md:text-base opacity-80 max-w-md leading-relaxed">
           {slides[current].sub}
         </p>
         <a
-          href="#works"
+          href="#about"
           className="mt-10 inline-block border border-white text-white text-xs tracking-widest px-10 py-3 hover:bg-white hover:text-primary-dark transition-all duration-300"
         >
-          施工事例を見る
+          私たちについて
         </a>
       </div>
 

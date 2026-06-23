@@ -1,29 +1,25 @@
 const footerNav = [
   {
-    heading: "会社情報",
+    heading: "About",
     links: [
+      { label: "経営理念", href: "#about" },
       { label: "私たちについて", href: "#about" },
-      { label: "スタッフ紹介", href: "#" },
-      { label: "会社概要", href: "#" },
-      { label: "採用情報", href: "#" },
+      { label: "オーナー経歴", href: "#about" },
     ],
   },
   {
-    heading: "家づくり",
+    heading: "Service",
     links: [
-      { label: "家づくりのこだわり", href: "#features" },
-      { label: "設計の流れ", href: "#" },
-      { label: "資金・ローン", href: "#" },
-      { label: "よくある質問", href: "#" },
+      { label: "ラインナップ", href: "#lineup" },
+      { label: "ファブリック", href: "#fabric" },
+      { label: "ご注文ガイド", href: "#guide" },
     ],
   },
   {
-    heading: "実績・お知らせ",
+    heading: "Gallery",
     links: [
-      { label: "施工事例", href: "#works" },
-      { label: "お知らせ", href: "#news" },
-      { label: "ブログ", href: "#" },
-      { label: "イベント情報", href: "#" },
+      { label: "仕立て事例", href: "#case" },
+      { label: "Instagram", href: "https://www.instagram.com/" },
     ],
   },
 ];
@@ -37,62 +33,39 @@ export default function Footer() {
           {/* Company info */}
           <div>
             <div className="mb-6">
-              <p className="text-white font-serif font-light text-xl tracking-widest">
-                金沢建築設計
+              <p className="text-white font-serif font-light text-lg tracking-widest">
+                Tailor maison Défi
               </p>
-              <p className="text-gray-500 text-[10px] tracking-widest mt-1">
-                KANAZAWA ARCHITECTURE DESIGN
+              <p className="text-gray-500 text-[9px] tracking-widest mt-1">
+                HAUTE COUTURE
               </p>
             </div>
-            <address className="not-italic text-sm leading-8 space-y-1">
-              <p>〒920-0000</p>
-              <p>石川県金沢市大豆田本町1-2-3</p>
-              <p>
-                TEL:{" "}
-                <a
-                  href="tel:0762000000"
-                  className="hover:text-white transition-colors"
-                >
-                  076-200-0000
-                </a>
-              </p>
-              <p>
-                FAX:{" "}
-                <a
-                  href="tel:0762000001"
-                  className="hover:text-white transition-colors"
-                >
-                  076-200-0001
-                </a>
-              </p>
-            </address>
+            <div className="text-sm leading-8 space-y-1">
+              <p>福岡県 出張型オーダースーツサロン</p>
+            </div>
             <div className="mt-6 text-xs space-y-1">
-              <p>営業時間：9:00〜17:30</p>
-              <p>定休日：水曜日・祝日</p>
+              <p>完全予約制</p>
             </div>
 
             {/* SNS */}
             <div className="flex gap-4 mt-6">
               <a
-                href="#"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
               >
                 IG
               </a>
               <a
-                href="#"
-                aria-label="Facebook"
+                href="https://line.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
                 className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
               >
-                FB
-              </a>
-              <a
-                href="#"
-                aria-label="YouTube"
-                className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
-              >
-                YT
+                LINE
               </a>
             </div>
           </div>
@@ -123,13 +96,10 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-          <p>© 2025 金沢建築設計株式会社 All rights reserved.</p>
+          <p>© 2025 Tailor maison Défi Haute couture All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-gray-400 transition-colors">
               プライバシーポリシー
-            </a>
-            <a href="#" className="hover:text-gray-400 transition-colors">
-              サイトマップ
             </a>
           </div>
         </div>
