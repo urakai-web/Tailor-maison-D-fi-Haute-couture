@@ -5,25 +5,25 @@ const lineupItems = [
     title: "スーツ",
     subtitle: "Suit",
     description: "ビジネスからフォーマルまで、あらゆるシーンに対応するオーダースーツ。",
-    image: "/images/feature-01.png",
+    image: "/images/lineup-suit.jpg",
   },
   {
     title: "シャツ",
     subtitle: "Shirt",
     description: "襟型・カフス・生地を自由に選べるオーダーシャツ。",
-    image: "/images/feature-02.png",
+    image: "/images/lineup-shirt.png",
   },
   {
     title: "コート",
     subtitle: "Coat",
     description: "上質な素材で仕立てるオーダーコート。",
-    image: "/images/feature-03.png",
+    image: "/images/lineup-coat.jpg",
   },
   {
     title: "その他",
     subtitle: "Others",
     description: "ベスト、パンツ、ネクタイなど、トータルコーディネートに対応。",
-    image: "/images/feature-04.png",
+    image: "/images/lineup-others.jpg",
   },
 ];
 
