@@ -30,6 +30,10 @@ export default {
           '"Yu Mincho"',
           "serif",
         ],
+        logo: [
+          '"Cormorant Garamond"',
+          "serif",
+        ],
       },
       letterSpacing: {
         widest2: "0.2em",

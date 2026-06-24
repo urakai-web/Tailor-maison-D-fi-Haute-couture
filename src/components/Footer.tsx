@@ -35,10 +35,10 @@ export default function Footer() {
           {/* Company info */}
           <div>
             <div className="mb-6">
-              <p className="text-white font-serif font-light text-lg tracking-widest">
+              <p className="text-white font-logo font-light text-lg tracking-widest">
                 Tailor maison Défi
               </p>
-              <p className="text-gray-500 text-[9px] tracking-widest mt-1">
+              <p className="text-gray-500 text-[9px] font-logo tracking-widest mt-1">
                 HAUTE COUTURE
               </p>
             </div>

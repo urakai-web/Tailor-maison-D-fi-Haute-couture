@@ -33,14 +33,14 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="flex flex-col leading-none group">
           <span
-            className={`text-lg font-serif font-light tracking-widest transition-colors duration-300 ${
+            className={`text-lg font-logo font-light tracking-widest transition-colors duration-300 ${
               showWhite ? "text-white" : "text-primary-dark"
             }`}
           >
             Tailor maison Défi
           </span>
           <span
-            className={`text-[9px] tracking-widest mt-0.5 transition-colors duration-300 ${
+            className={`text-[9px] font-logo tracking-widest mt-0.5 transition-colors duration-300 ${
               showWhite ? "text-white/80" : "text-gray-500"
             }`}
           >
