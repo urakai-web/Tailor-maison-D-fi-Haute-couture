@@ -52,9 +52,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
-        <p className="text-xs tracking-widest3 mb-6 opacity-80">
-          TAILOR MAISON DÉFI HAUTE COUTURE
-        </p>
+        <img
+          src="/images/logo.jpg"
+          alt="Tailor maison Défi Haute couture"
+          className="h-24 md:h-32 mb-6 object-contain brightness-0 invert opacity-90"
+        />
         <h1 className="text-3xl md:text-5xl font-serif font-light leading-relaxed mb-6 whitespace-pre-line hero-slide">
           {slides[current].catchcopy}
         </h1>
