@@ -55,7 +55,7 @@ export default function Hero() {
         <img
           src="/images/logo.jpg"
           alt="Tailor maison Défi Haute couture"
-          className="h-24 md:h-32 mb-6 object-contain brightness-0 invert opacity-90"
+          className="h-24 md:h-32 mb-6 object-contain invert mix-blend-screen"
         />
         <h1 className="text-3xl md:text-5xl font-serif font-light leading-relaxed mb-6 whitespace-pre-line hero-slide">
           {slides[current].catchcopy}
