@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import TopPage from "./pages/TopPage";
 import LineUpPage from "./pages/LineUpPage";
 import FabricPage from "./pages/FabricPage";
+import PricePage from "./pages/PricePage";
 import GuidePage from "./pages/GuidePage";
 import CasePage from "./pages/CasePage";
 import ScrollToTop from "./components/ScrollToTop";
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/" element={<TopPage />} />
             <Route path="/lineup" element={<LineUpPage />} />
             <Route path="/fabric" element={<FabricPage />} />
+            <Route path="/price" element={<PricePage />} />
             <Route path="/guide" element={<GuidePage />} />
             <Route path="/case" element={<CasePage />} />
           </Routes>

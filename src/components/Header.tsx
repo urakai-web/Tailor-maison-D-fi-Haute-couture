@@ -5,6 +5,7 @@ const navItems = [
   { label: "私たちについて", href: "/#about" },
   { label: "Line Up", href: "/lineup" },
   { label: "Fabric", href: "/fabric" },
+  { label: "Price", href: "/price" },
   { label: "ご注文ガイド", href: "/guide" },
   { label: "仕立て事例", href: "/case" },
 ];
