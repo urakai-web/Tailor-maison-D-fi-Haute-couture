@@ -55,8 +55,7 @@ export default function Hero() {
         <img
           src="/images/logo.png"
           alt="Tailor maison Défi Haute couture"
-          className="h-96 md:h-[500px] object-contain opacity-60"
-          style={{ marginBottom: "-490px" }}
+          className="h-96 md:h-[500px] object-contain opacity-60 mb-6"
         />
         <h1 className="text-3xl md:text-5xl font-serif font-light leading-relaxed mb-6 whitespace-pre-line hero-slide">
           {slides[current].catchcopy}
