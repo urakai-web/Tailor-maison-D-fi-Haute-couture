@@ -51,7 +51,7 @@ export default function Hero() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center -mt-[140px] text-center text-white px-6">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6" style={{ marginTop: "-320px" }}>
         <img
           src="/images/logo.png"
           alt="Tailor maison Défi Haute couture"
