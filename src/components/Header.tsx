@@ -34,7 +34,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="flex flex-col leading-none group">
           <span
-            className={`text-lg font-logo font-medium tracking-widest transition-colors duration-300 ${
+            className={`text-lg font-logo font-bold tracking-widest transition-colors duration-300 ${
               showWhite ? "text-white" : "text-gray-900"
             }`}
           >
