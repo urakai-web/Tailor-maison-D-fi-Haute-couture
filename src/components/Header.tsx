@@ -35,14 +35,14 @@ export default function Header() {
         <Link to="/" className="flex flex-col leading-none group">
           <span
             className={`text-lg font-logo font-medium tracking-widest transition-colors duration-300 ${
-              showWhite ? "text-white" : "text-primary-dark"
+              showWhite ? "text-white" : "text-gray-900"
             }`}
           >
             Tailor maison Défi
           </span>
           <span
             className={`text-[9px] font-logo tracking-widest mt-0.5 transition-colors duration-300 ${
-              showWhite ? "text-white/80" : "text-gray-500"
+              showWhite ? "text-white/80" : "text-gray-600"
             }`}
           >
             HAUTE COUTURE

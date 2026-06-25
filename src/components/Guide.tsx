@@ -90,7 +90,7 @@ export default function Guide() {
 
                 <div className="flex gap-6 md:gap-8 pb-12">
                   {/* Step number */}
-                  <div className="flex-none w-12 h-12 md:w-16 md:h-16 bg-primary text-white flex items-center justify-center text-sm md:text-base font-serif font-light relative z-10">
+                  <div className="flex-none w-12 h-12 md:w-16 md:h-16 bg-accent text-white flex items-center justify-center text-sm md:text-base font-serif font-light relative z-10">
                     {String(index + 1).padStart(2, "0")}
                   </div>
 

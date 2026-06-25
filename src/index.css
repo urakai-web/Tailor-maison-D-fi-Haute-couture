@@ -18,6 +18,11 @@
     @apply text-3xl md:text-4xl font-serif font-light text-center;
   }
 
+  .section-title::after {
+    content: "";
+    @apply block w-12 h-px bg-accent mx-auto mt-4;
+  }
+
   .section-subtitle {
     @apply text-sm tracking-widest text-primary uppercase text-center mt-2;
   }
