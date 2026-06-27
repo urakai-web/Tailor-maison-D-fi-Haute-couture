@@ -2,18 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { client, isMicroCMSEnabled } from "../lib/microcms";
 import type { Case, Tag } from "../lib/microcms";
 
-const fallbackCases = [
-  { id: "1", image: "/images/case-placeholder.jpg", title: "ビジネススーツ", tag: "Suit", instagramUrl: "" },
-  { id: "2", image: "/images/case-placeholder.jpg", title: "フォーマルスーツ", tag: "Suit", instagramUrl: "" },
-  { id: "3", image: "/images/case-placeholder.jpg", title: "オーダーシャツ", tag: "Shirt", instagramUrl: "" },
-  { id: "4", image: "/images/case-placeholder.jpg", title: "カジュアルセットアップ", tag: "Suit", instagramUrl: "" },
-  { id: "5", image: "/images/case-placeholder.jpg", title: "オーダーコート", tag: "Coat", instagramUrl: "" },
-  { id: "6", image: "/images/case-placeholder.jpg", title: "ウェディングスーツ", tag: "Suit", instagramUrl: "" },
-];
 
 export default function CaseSection() {
   const ref = useRef<HTMLDivElement>(null);
-  const [cases, setCases] = useState<{ id: string; image: string; title: string; tag: string; instagramUrl: string }[]>(fallbackCases);
+  const [cases, setCases] = useState<{ id: string; image: string; title: string; tag: string; instagramUrl: string }[]>([]);
   const [tags, setTags] = useState<Tag[]>([]);
   const [activeTag, setActiveTag] = useState<string>("");
 
@@ -23,17 +15,15 @@ export default function CaseSection() {
     client
       .getList<Case>({ endpoint: "cases", queries: { limit: 50 } })
       .then((res) => {
-        if (res.contents.length > 0) {
-          setCases(
-            res.contents.map((c) => ({
-              id: c.id,
-              image: c.image.url,
-              title: c.title,
-              tag: c.tag?.name ?? "",
-              instagramUrl: c.instagramUrl ?? "",
-            }))
-          );
-        }
+        setCases(
+          res.contents.map((c) => ({
+            id: c.id,
+            image: c.image.url,
+            title: c.title,
+            tag: c.tag?.name ?? "",
+            instagramUrl: c.instagramUrl ?? "",
+          }))
+        );
       })
       .catch(() => {});
 
