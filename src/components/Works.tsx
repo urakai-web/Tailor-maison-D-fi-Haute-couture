@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { client } from "../lib/microcms";
+import { client, isMicroCMSEnabled } from "../lib/microcms";
 import type { Case, Tag } from "../lib/microcms";
 
 const fallbackCases = [
@@ -18,6 +18,8 @@ export default function CaseSection() {
   const [activeTag, setActiveTag] = useState<string>("");
 
   useEffect(() => {
+    if (!isMicroCMSEnabled || !client) return;
+
     client
       .getList<Case>({ endpoint: "cases", queries: { limit: 50 } })
       .then((res) => {
