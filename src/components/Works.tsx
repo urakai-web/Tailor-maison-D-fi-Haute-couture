@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { fetchList } from "../lib/microcms";
 import type { Case, Tag } from "../lib/microcms";
 
+
 export default function CaseSection() {
   const ref = useRef<HTMLDivElement>(null);
   const [cases, setCases] = useState<{ id: string; image: string; title: string; tags: string[]; instagramURL: string }[]>([]);
