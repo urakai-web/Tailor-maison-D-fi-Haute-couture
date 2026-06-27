@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { client, isMicroCMSEnabled } from "../lib/microcms";
+import { fetchList } from "../lib/microcms";
 import type { Case, Tag } from "../lib/microcms";
 
 export default function CaseSection() {
@@ -9,27 +9,21 @@ export default function CaseSection() {
   const [activeTag, setActiveTag] = useState<string>("");
 
   useEffect(() => {
-    if (!isMicroCMSEnabled || !client) return;
+    fetchList<Case>("cases").then((contents) => {
+      setCases(
+        contents.map((c) => ({
+          id: c.id,
+          image: c.image.url,
+          title: c.title,
+          tags: c.tag?.map((t) => t.name) ?? [],
+          instagramURL: c.instagramURL ?? "",
+        }))
+      );
+    });
 
-    client
-      .getList<Case>({ endpoint: "cases", queries: { limit: 50 } })
-      .then((res) => {
-        setCases(
-          res.contents.map((c) => ({
-            id: c.id,
-            image: c.image.url,
-            title: c.title,
-            tags: c.tag?.map((t) => t.name) ?? [],
-            instagramURL: c.instagramURL ?? "",
-          }))
-        );
-      })
-      .catch(() => {});
-
-    client
-      .getList<Tag>({ endpoint: "tags", queries: { limit: 50 } })
-      .then((res) => setAllTags(res.contents))
-      .catch(() => {});
+    fetchList<Tag>("tags").then((contents) => {
+      setAllTags(contents);
+    });
   }, []);
 
   useEffect(() => {
