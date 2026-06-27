@@ -2,11 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { client, isMicroCMSEnabled } from "../lib/microcms";
 import type { Case, Tag } from "../lib/microcms";
 
-
 export default function CaseSection() {
   const ref = useRef<HTMLDivElement>(null);
-  const [cases, setCases] = useState<{ id: string; image: string; title: string; tag: string; instagramURL: string }[]>([]);
-  const [tags, setTags] = useState<Tag[]>([]);
+  const [cases, setCases] = useState<{ id: string; image: string; title: string; tags: string[]; instagramURL: string }[]>([]);
+  const [allTags, setAllTags] = useState<Tag[]>([]);
   const [activeTag, setActiveTag] = useState<string>("");
 
   useEffect(() => {
@@ -20,7 +19,7 @@ export default function CaseSection() {
             id: c.id,
             image: c.image.url,
             title: c.title,
-            tag: c.tag?.[0]?.name ?? "",
+            tags: c.tag?.map((t) => t.name) ?? [],
             instagramURL: c.instagramURL ?? "",
           }))
         );
@@ -29,7 +28,7 @@ export default function CaseSection() {
 
     client
       .getList<Tag>({ endpoint: "tags", queries: { limit: 50 } })
-      .then((res) => setTags(res.contents))
+      .then((res) => setAllTags(res.contents))
       .catch(() => {});
   }, []);
 
@@ -47,7 +46,7 @@ export default function CaseSection() {
   }, [cases]);
 
   const filtered = activeTag
-    ? cases.filter((c) => c.tag === activeTag)
+    ? cases.filter((c) => c.tags.includes(activeTag))
     : cases;
 
   return (
@@ -65,7 +64,7 @@ export default function CaseSection() {
         </div>
 
         {/* Tag filter */}
-        {tags.length > 0 && (
+        {allTags.length > 0 && (
           <div className="flex flex-wrap justify-center gap-3 mb-10 fade-in-up">
             <button
               onClick={() => setActiveTag("")}
@@ -77,7 +76,7 @@ export default function CaseSection() {
             >
               ALL
             </button>
-            {tags.map((tag) => (
+            {allTags.map((tag) => (
               <button
                 key={tag.id}
                 onClick={() => setActiveTag(tag.name)}
@@ -110,9 +109,13 @@ export default function CaseSection() {
                   />
                 </div>
                 <div className="mt-2">
-                  <span className="text-[10px] tracking-widest text-accent uppercase">
-                    {item.tag}
-                  </span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {item.tags.map((tag) => (
+                      <span key={tag} className="text-[10px] tracking-widest text-accent uppercase">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                   <p className="text-sm text-gray-800 font-light mt-0.5">
                     {item.title}
                   </p>
