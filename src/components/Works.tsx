@@ -5,7 +5,7 @@ import type { Case, Tag } from "../lib/microcms";
 
 export default function CaseSection() {
   const ref = useRef<HTMLDivElement>(null);
-  const [cases, setCases] = useState<{ id: string; image: string; title: string; tag: string; instagramUrl: string }[]>([]);
+  const [cases, setCases] = useState<{ id: string; image: string; title: string; tag: string; instagramURL: string }[]>([]);
   const [tags, setTags] = useState<Tag[]>([]);
   const [activeTag, setActiveTag] = useState<string>("");
 
@@ -21,7 +21,7 @@ export default function CaseSection() {
             image: c.image.url,
             title: c.title,
             tag: c.tag?.name ?? "",
-            instagramUrl: c.instagramUrl ?? "",
+            instagramURL: c.instagramURL ?? "",
           }))
         );
       })
@@ -96,9 +96,9 @@ export default function CaseSection() {
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 fade-in-up">
           {filtered.map((item) => {
-            const Wrapper = item.instagramUrl ? "a" : "div";
-            const linkProps = item.instagramUrl
-              ? { href: item.instagramUrl, target: "_blank" as const, rel: "noopener noreferrer" }
+            const Wrapper = item.instagramURL ? "a" : "div";
+            const linkProps = item.instagramURL
+              ? { href: item.instagramURL, target: "_blank" as const, rel: "noopener noreferrer" }
               : {};
             return (
               <Wrapper key={item.id} className="cursor-pointer" {...linkProps}>
