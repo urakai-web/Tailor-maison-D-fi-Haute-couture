@@ -18,5 +18,5 @@ export type Case = {
   title: string;
   image: MicroCMSImage;
   instagramURL: string;
-  tag: Tag;
+  tag: Tag[];
 } & MicroCMSListContent;

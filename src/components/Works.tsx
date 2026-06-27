@@ -20,7 +20,7 @@ export default function CaseSection() {
             id: c.id,
             image: c.image.url,
             title: c.title,
-            tag: c.tag?.name ?? "",
+            tag: c.tag?.[0]?.name ?? "",
             instagramURL: c.instagramURL ?? "",
           }))
         );
