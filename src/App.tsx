@@ -8,6 +8,10 @@ import PricePage from "./pages/PricePage";
 import GuidePage from "./pages/GuidePage";
 import CasePage from "./pages/CasePage";
 import SuitPage from "./pages/SuitPage";
+import TiePage from "./pages/TiePage";
+import CoatPage from "./pages/CoatPage";
+import BeltPage from "./pages/BeltPage";
+import GiftPage from "./pages/GiftPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -21,6 +25,10 @@ export default function App() {
             <Route path="/" element={<TopPage />} />
             <Route path="/lineup" element={<LineUpPage />} />
             <Route path="/lineup/suit" element={<SuitPage />} />
+            <Route path="/lineup/tie" element={<TiePage />} />
+            <Route path="/lineup/coat" element={<CoatPage />} />
+            <Route path="/lineup/belt" element={<BeltPage />} />
+            <Route path="/lineup/gift" element={<GiftPage />} />
             <Route path="/fabric" element={<FabricPage />} />
             <Route path="/price" element={<PricePage />} />
             <Route path="/guide" element={<GuidePage />} />

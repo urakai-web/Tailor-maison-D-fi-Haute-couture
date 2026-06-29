@@ -14,7 +14,7 @@ const lineupItems = [
     subtitle: "Shirt",
     description: "襟型・カフス・生地を自由に選べるオーダーシャツ。",
     image: "/images/lineup-shirt.png",
-    href: "/lineup/shirt",
+    href: "",
   },
   {
     title: "コート",
@@ -24,11 +24,25 @@ const lineupItems = [
     href: "/lineup/coat",
   },
   {
-    title: "その他",
-    subtitle: "Others",
-    description: "ベスト、パンツ、ネクタイなど、トータルコーディネートに対応。",
-    image: "/images/lineup-others.jpg",
-    href: "/lineup/others",
+    title: "ネクタイ",
+    subtitle: "Tie",
+    description: "国内老舗工房によるハンドメイドネクタイ。",
+    image: "/images/lineup-others.jpg", // TODO: ネクタイ用の画像に差し替え
+    href: "/lineup/tie",
+  },
+  {
+    title: "ベルト",
+    subtitle: "Belt",
+    description: "Made in Japan。伸びるレザーベルト。",
+    image: "/images/lineup-others.jpg", // TODO: ベルト用の画像に差し替え
+    href: "/lineup/belt",
+  },
+  {
+    title: "お仕立券",
+    subtitle: "Gift",
+    description: "大切な方へ極上の一着を贈る。",
+    image: "/images/lineup-others.jpg", // TODO: お仕立券用の画像に差し替え
+    href: "/lineup/gift",
   },
 ];
 
@@ -67,8 +81,11 @@ export default function LineUp() {
 
         {/* Lineup grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {lineupItems.map((item) => (
-            <Link key={item.title} to={item.href} className="fade-in-up group cursor-pointer">
+          {lineupItems.map((item) => {
+            const Wrapper = item.href ? Link : "div";
+            const linkProps = item.href ? { to: item.href } : {};
+            return (
+            <Wrapper key={item.title} {...linkProps} className="fade-in-up group cursor-pointer">
               <div className="relative overflow-hidden aspect-[3/4]">
                 <img
                   src={item.image}
@@ -87,8 +104,9 @@ export default function LineUp() {
                   {item.description}
                 </p>
               </div>
-            </Link>
-          ))}
+            </Wrapper>
+            );
+          })}
         </div>
       </div>
     </section>
