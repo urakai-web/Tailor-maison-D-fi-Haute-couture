@@ -12,6 +12,12 @@ import TiePage from "./pages/TiePage";
 import CoatPage from "./pages/CoatPage";
 import BeltPage from "./pages/BeltPage";
 import GiftPage from "./pages/GiftPage";
+import JacketPage from "./pages/JacketPage";
+import SlacksPage from "./pages/SlacksPage";
+import VestPage from "./pages/VestPage";
+import TshirtPage from "./pages/TshirtPage";
+import PoloPage from "./pages/PoloPage";
+import ShirtPage from "./pages/ShirtPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -29,6 +35,12 @@ export default function App() {
             <Route path="/lineup/coat" element={<CoatPage />} />
             <Route path="/lineup/belt" element={<BeltPage />} />
             <Route path="/lineup/gift" element={<GiftPage />} />
+            <Route path="/lineup/jacket" element={<JacketPage />} />
+            <Route path="/lineup/slacks" element={<SlacksPage />} />
+            <Route path="/lineup/vest" element={<VestPage />} />
+            <Route path="/lineup/tshirt" element={<TshirtPage />} />
+            <Route path="/lineup/polo" element={<PoloPage />} />
+            <Route path="/lineup/shirt" element={<ShirtPage />} />
             <Route path="/fabric" element={<FabricPage />} />
             <Route path="/price" element={<PricePage />} />
             <Route path="/guide" element={<GuidePage />} />
