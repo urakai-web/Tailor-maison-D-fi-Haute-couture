@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const lineupItems = [
   {
@@ -6,24 +7,28 @@ const lineupItems = [
     subtitle: "Suit",
     description: "ビジネスからフォーマルまで、あらゆるシーンに対応するオーダースーツ。",
     image: "/images/lineup-suit.jpg",
+    href: "/lineup/suit",
   },
   {
     title: "シャツ",
     subtitle: "Shirt",
     description: "襟型・カフス・生地を自由に選べるオーダーシャツ。",
     image: "/images/lineup-shirt.png",
+    href: "/lineup/shirt",
   },
   {
     title: "コート",
     subtitle: "Coat",
     description: "上質な素材で仕立てるオーダーコート。",
     image: "/images/lineup-coat.jpg",
+    href: "/lineup/coat",
   },
   {
     title: "その他",
     subtitle: "Others",
     description: "ベスト、パンツ、ネクタイなど、トータルコーディネートに対応。",
     image: "/images/lineup-others.jpg",
+    href: "/lineup/others",
   },
 ];
 
@@ -49,10 +54,13 @@ export default function LineUp() {
         {/* Section header */}
         <div className="text-center mb-16 fade-in-up">
           <p className="text-xs tracking-widest text-primary uppercase mb-3">
-            Line Up
+            Lineup
           </p>
-          <h2 className="section-title">ラインナップ</h2>
-          <p className="text-sm text-gray-500 mt-4 max-w-xl mx-auto leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-800">
+            ラインナップ
+          </h2>
+          <div className="w-12 h-px bg-accent mx-auto mt-4" />
+          <p className="text-sm text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
             お客様のライフスタイルやご要望に合わせた、幅広いオーダーメイドアイテムをご用意しています。
           </p>
         </div>
@@ -60,14 +68,13 @@ export default function LineUp() {
         {/* Lineup grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {lineupItems.map((item) => (
-            <div key={item.title} className="fade-in-up group cursor-pointer">
+            <Link key={item.title} to={item.href} className="fade-in-up group cursor-pointer">
               <div className="relative overflow-hidden aspect-[3/4]">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="mt-4 text-center">
                 <p className="text-[10px] tracking-widest text-accent uppercase mb-1">
@@ -80,14 +87,8 @@ export default function LineUp() {
                   {item.description}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
-        </div>
-
-        <div className="text-center mt-12 fade-in-up">
-          <a href="/lineup" className="btn-outline text-xs">
-            ラインナップ詳細 →
-          </a>
         </div>
       </div>
     </section>

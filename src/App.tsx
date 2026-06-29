@@ -7,6 +7,7 @@ import FabricPage from "./pages/FabricPage";
 import PricePage from "./pages/PricePage";
 import GuidePage from "./pages/GuidePage";
 import CasePage from "./pages/CasePage";
+import SuitPage from "./pages/SuitPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<TopPage />} />
             <Route path="/lineup" element={<LineUpPage />} />
+            <Route path="/lineup/suit" element={<SuitPage />} />
             <Route path="/fabric" element={<FabricPage />} />
             <Route path="/price" element={<PricePage />} />
             <Route path="/guide" element={<GuidePage />} />
