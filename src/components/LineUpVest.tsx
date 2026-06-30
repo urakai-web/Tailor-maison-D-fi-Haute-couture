@@ -36,7 +36,7 @@ export default function LineUpVest() {
             </div>
             <div>
               <h3 className="text-xl font-serif font-light text-gray-800 mb-2">スーツスリーピース用ベスト</h3>
-              <p className="text-xs text-accent mb-6">インナーベスト</p>
+              <p className="text-xs text-accent mb-6">インナーベスト / Inner Vest</p>
               <p className="text-sm text-gray-700 font-medium mb-4">
                 【王道の品格】スリーピースで魅せる、洗練されたクラシックスタイル
               </p>
@@ -76,7 +76,7 @@ export default function LineUpVest() {
             </div>
             <div className="md:order-1">
               <h3 className="text-xl font-serif font-light text-gray-800 mb-2">オッドベスト</h3>
-              <p className="text-xs text-accent mb-6">着崩すコーディネート向け</p>
+              <p className="text-xs text-accent mb-6">着崩すコーディネート向け / Odd Vest</p>
               <p className="text-sm text-gray-700 font-medium mb-4">
                 【個性を愉しむ】いつもの装いを一変させる、主役級の「オッドベスト」
               </p>
