@@ -115,7 +115,7 @@ export default function LineUp() {
         </div>
 
         {/* Lineup grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {lineupItems.map((item) => {
             const Wrapper = item.href ? Link : "div";
             const linkProps = item.href ? { to: item.href } : {};
