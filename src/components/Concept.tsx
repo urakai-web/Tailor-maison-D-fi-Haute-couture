@@ -71,11 +71,11 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-16 items-center mb-24 fade-in-up">
           <div className="md:order-2">
             <div className="relative">
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[2/3] overflow-hidden">
                 <img
                   src="/images/owner.jpg"
                   alt="オーナー"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-accent -z-10" />
