@@ -11,17 +11,17 @@ const standardFeatures = [
 ];
 
 const priceItems = [
-  { name: "2Pスーツ", price: "¥60,000", tax: "税込66,000", image: "/images/price/2p-suit.jpg" },
-  { name: "3Pスーツ", price: "¥75,000", tax: "税込82,500", image: "/images/price/2p-suit.jpg" },
-  { name: "ジャケット", price: "¥40,000", tax: "税込44,000", image: "/images/price/jacket.jpg" },
-  { name: "スラックス", price: "¥27,000", tax: "税込29,700", image: "/images/price/slacks.jpg" },
-  { name: "ベスト", price: "¥24,000", tax: "税込26,400", image: "/images/price/vest.jpg" },
-  { name: "シャツ", price: "¥13,000", tax: "税込14,300", image: "/images/price/shirt.jpg" },
-  { name: "ネクタイ", price: "¥13,000", tax: "税込14,300", image: "/images/price/necktie.jpg" },
+  { name: "2Pスーツ", price: "¥60,000", tax: "税込66,000", image: "/images/lineup-suit.jpg" },
+  { name: "3Pスーツ", price: "¥75,000", tax: "税込82,500", image: "/images/vest-three-piece.jpg" },
+  { name: "ジャケット", price: "¥40,000", tax: "税込44,000", image: "/images/lineup-jacket.jpg" },
+  { name: "スラックス", price: "¥27,000", tax: "税込29,700", image: "/images/lineup-slacks.jpg" },
+  { name: "ベスト", price: "¥24,000", tax: "税込26,400", image: "/images/lineup-vest.jpg" },
+  { name: "シャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-shirt.jpg" },
+  { name: "ネクタイ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-others.jpg" },
   { name: "コート", price: "¥70,000", tax: "税込77,000", image: "/images/lineup-coat.jpg" },
-  { name: "ドレスTシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/price/shirt.jpg" },
-  { name: "ポロシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/price/shirt.jpg" },
-  { name: "ベルト", price: "¥15,000", tax: "税込16,500", image: "/images/price/necktie.jpg" },
+  { name: "ドレスTシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-tshirt.jpg" },
+  { name: "ポロシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-polo.jpg" },
+  { name: "ベルト", price: "¥15,000", tax: "税込16,500", image: "/images/lineup-belt.jpg" },
 ];
 
 const giftCards = [
