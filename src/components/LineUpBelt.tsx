@@ -95,7 +95,7 @@ export default function LineUpBelt() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/belt-american-oil.jpg"
+                  src="/images/belt-madeinjapan.jpg"
                   alt="レザーベルト"
                   className="w-full h-full object-cover"
                 />
