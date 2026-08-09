@@ -42,7 +42,7 @@ export default function LineUpGift() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/lineup-suit.jpg" // TODO: ギフト用の画像に差し替え
+                  src="/images/gift-main.jpg"
                   alt="お仕立券"
                   className="w-full h-full object-cover"
                 />

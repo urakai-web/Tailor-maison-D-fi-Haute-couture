@@ -4,20 +4,20 @@ const coatStyles = [
   {
     name: "チェスターコート（Chester coat）",
     description:
-      "チェスターコートは英国発祥の伝統的なコートです。テーラーメゾンディフィ（Tailor maison Défi）のチェスターコートはその伝統的なデザインを踏襲しながら現代風にアレンジし提案致します。チェスターコートは膝丈程の長さでテーラードジャケットのようなラペルで構成されているため、ビジネスシーンにも最適です。素材はもちろん、着丈の長さやポケットなどのデザインディテールを変更できるのも、オーダーの魅力です。",
-    image: "/images/lineup-coat.jpg", // TODO: チェスターコート用の画像に差し替え
+      "英国発祥の正統派スタイルを現代に昇華させたチェスターコート。テーラードジャケットの流れを汲む美しいラペルと端正な膝丈のデザインは、ビジネスシーンに確かな品格を添えます。\n\nさらに、上質な素材選びはもちろん、着丈の微調整やポケットの意匠変更など、ディテールを自分好みに作り込めるのもオーダーならではの贅沢です。",
+    image: "/images/coat-chester.jpg",
   },
   {
     name: "ステンカラーコート（Soutien collar coat）",
     description:
-      "ステンカラーコートは後襟部分が高く、前に向かって低く折り返せるようになった、いわゆる襟付きの膝丈コートです。ステンカラーコートもシンプルでどんなシーンにも合わせやすい定番のスタイルですが、素材やデザインディテールなどお好みにあわせて様々なシーンでご着用いただけます。",
-    image: "/images/lineup-coat.jpg", // TODO: ステンカラーコート用の画像に差し替え
+      "ステンカラーコートは、後ろ襟が高く立ち上がり、前方に向けて低く折り返る独特の襟線が特徴的な膝丈の定番アウターです。シンプルで洗練されたシルエットは、ビジネスからカジュアルまで幅広いシーンに溶け込みます。\n\n選ぶ素材や細部のディテールによって印象が大きく変わるため、自分のスタイルに合わせた自由なコーディネートを楽しめるのが魅力です。",
+    image: "/images/coat-soutien.jpg",
   },
   {
     name: "アルスターコート（Ulster coat）",
     description:
-      "アルスターコートとは、大きな上襟と浅いVゾーン、フロントのダブルブレストのデザインが特徴のコート。特に防寒性や気密性が求められたこのようなデザインを踏襲し、現代的にアレンジされています。クラシカルな印象から幅広い年齢層に人気のアルスターコート。実用面ばかりではなく、冬のお洒落をお楽しみいただけます。",
-    image: "/images/lineup-coat.jpg", // TODO: アルスターコート用の画像に差し替え
+      "大きめの襟元と浅いVライン、そして存在感のあるダブルブレストが目を引くアルスターコート。高い防寒性と気密性を備えた伝統的なミリタリー・ワークスタイルをベースに、現代の街に馴染む洗練されたシルエットへと進化を遂げました。\n\nそのクラシカルで品格のある佇まいは、世代を問わず多くの男性を魅了しています。機能美だけにとどまらない、冬の装いを格上げしてくれる特別な一着です。",
+    image: "/images/coat-ulster.jpg",
   },
   {
     name: "ラグランコート（raglan coat）",
@@ -75,8 +75,8 @@ export default function LineUpCoat() {
                 }`}
               >
                 <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img src={style.image} alt={style.name} className="w-full h-full object-cover" />
+                  <div className="aspect-[4/3] overflow-hidden bg-gray-50 flex items-center justify-center">
+                    <img src={style.image} alt={style.name} className="w-full h-full object-contain" />
                   </div>
                 </div>
                 <div className={index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}>

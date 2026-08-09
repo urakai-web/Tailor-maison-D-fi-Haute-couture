@@ -43,9 +43,12 @@ export default function Footer() {
               </p>
             </div>
             <div className="text-sm leading-8 space-y-1">
-              <p>福岡県 出張型オーダースーツサロン</p>
+              <p>出張型オーダースーツサロン</p>
             </div>
-            <div className="mt-6 text-xs space-y-1">
+            <div className="mt-6 text-xs space-y-2 text-gray-500">
+              <p>〒000-0000 福岡県○○市○○ 0-0-0</p>
+              <p>TEL: 000-0000-0000</p>
+              <p>営業時間: 10:00〜19:00（不定休）</p>
               <p>完全予約制</p>
             </div>
 

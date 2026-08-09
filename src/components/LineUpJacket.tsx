@@ -29,7 +29,7 @@ export default function LineUpJacket() {
           <div className="grid md:grid-cols-2 gap-16 items-center fade-in-up">
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/lineup-suit.jpg" alt="ジャケット" className="w-full h-full object-cover" /> {/* TODO: ジャケット用の画像に差し替え */}
+                <img src="/images/jacket-main.jpg" alt="ジャケット" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent -z-10" />
             </div>

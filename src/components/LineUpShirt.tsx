@@ -4,17 +4,17 @@ const shirtFabrics = [
   {
     name: "トーマス・メイソン（THOMAS MASON）",
     description: "1796年に英国のランカシャーで創業した世界最高峰のシャツ生地ブランド。",
-    image: "/images/lineup-shirt.png", // TODO: トーマス・メイソン用の画像に差し替え
+    image: "/images/shirt-thomas-mason.jpg",
   },
   {
     name: "アルビニ（Albini）",
     description: "トーマス・メイソン（THOMAS MASON）も傘下に抱える世界最大のシャツ生地メーカー。",
-    image: "/images/lineup-shirt.png", // TODO: アルビニ用の画像に差し替え
+    image: "/images/shirt-albini.jpg",
   },
   {
     name: "リバティ（LIBERTY）",
     description: "ロンドンの老舗百貨店『リバティ』が手がけるテキスタイルブランド。超長綿を使用したシルクタッチが特徴のタナローン（Tana Lawn）生地や唯一無二の繊細なプリントデザインが有名です。",
-    image: "/images/lineup-shirt.png", // TODO: リバティ用の画像に差し替え
+    image: "/images/shirt-liberty.jpg",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function LineUpShirt() {
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20 fade-in-up">
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/lineup-shirt.png" alt="オーダーシャツ" className="w-full h-full object-cover" /> {/* TODO: シャツメイン画像に差し替え */}
+                <img src="/images/shirt-collar.jpg" alt="オーダーシャツ" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent -z-10" />
             </div>

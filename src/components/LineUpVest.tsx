@@ -30,7 +30,7 @@ export default function LineUpVest() {
           <div className="grid md:grid-cols-2 gap-16 items-center mb-24 fade-in-up">
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/lineup-suit.jpg" alt="スリーピース用ベスト" className="w-full h-full object-cover" /> {/* TODO: インナーベスト用の画像に差し替え */}
+                <img src="/images/vest-three-piece.jpg" alt="スリーピース用ベスト" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent -z-10" />
             </div>
@@ -70,7 +70,7 @@ export default function LineUpVest() {
           <div className="grid md:grid-cols-2 gap-16 items-center fade-in-up">
             <div className="md:order-2 relative">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/lineup-suit.jpg" alt="オッドベスト" className="w-full h-full object-cover" /> {/* TODO: オッドベスト用の画像に差し替え */}
+                <img src="/images/vest-odd.jpg" alt="オッドベスト" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-accent -z-10" />
             </div>

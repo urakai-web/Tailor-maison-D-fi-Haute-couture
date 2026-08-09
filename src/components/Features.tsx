@@ -13,21 +13,21 @@ const lineupItems = [
     title: "ジャケット",
     subtitle: "Jacket",
     description: "on/offで使える万能なテーラードジャケット。",
-    image: "/images/lineup-suit.jpg", // TODO: ジャケット用の画像に差し替え
+    image: "/images/lineup-jacket.jpg",
     href: "/lineup/jacket",
   },
   {
     title: "スラックス",
     subtitle: "Slacks",
     description: "体型やお好みに合わせたオーダースラックス。",
-    image: "/images/lineup-suit.jpg", // TODO: スラックス用の画像に差し替え
+    image: "/images/lineup-slacks.jpg",
     href: "/lineup/slacks",
   },
   {
     title: "シャツ",
     subtitle: "Shirt",
     description: "襟型・カフス・生地を自由に選べるオーダーシャツ。",
-    image: "/images/lineup-shirt.png",
+    image: "/images/lineup-shirt.jpg",
     href: "/lineup/shirt",
   },
   {
@@ -41,7 +41,7 @@ const lineupItems = [
     title: "ジレ・ベスト",
     subtitle: "Gilet / Vest",
     description: "品格を格上げするスリーピースから、遊び心のオッドベストまで。",
-    image: "/images/lineup-suit.jpg", // TODO: ベスト用の画像に差し替え
+    image: "/images/lineup-vest.jpg",
     href: "/lineup/vest",
   },
   {
@@ -55,14 +55,14 @@ const lineupItems = [
     title: "オーダーTシャツ",
     subtitle: "T-Shirt",
     description: "REDA ACTIVE使用のオーダーWOOL Tシャツ。",
-    image: "/images/lineup-suit.jpg", // TODO: Tシャツ用の画像に差し替え
+    image: "/images/lineup-tshirt.jpg",
     href: "/lineup/tshirt",
   },
   {
     title: "オーダーポロシャツ",
     subtitle: "Polo Shirt",
     description: "ビジネスシーンで一番サマになるオーダーポロシャツ。",
-    image: "/images/lineup-suit.jpg", // TODO: ポロシャツ用の画像に差し替え
+    image: "/images/lineup-polo.jpg",
     href: "/lineup/polo",
   },
   {
@@ -76,7 +76,7 @@ const lineupItems = [
     title: "お仕立券",
     subtitle: "Gift",
     description: "大切な方へ極上の一着を贈る。",
-    image: "/images/lineup-others.jpg", // TODO: お仕立券用の画像に差し替え
+    image: "/images/lineup-gift.jpg",
     href: "/lineup/gift",
   },
 ];
