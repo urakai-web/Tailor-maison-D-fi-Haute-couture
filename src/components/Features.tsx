@@ -69,7 +69,7 @@ const lineupItems = [
     title: "ベルト",
     subtitle: "Belt",
     description: "Made in Japan。伸びるレザーベルト。",
-    image: "/images/lineup-others.jpg", // TODO: ベルト用の画像に差し替え
+    image: "/images/lineup-belt.jpg",
     href: "/lineup/belt",
   },
   {
