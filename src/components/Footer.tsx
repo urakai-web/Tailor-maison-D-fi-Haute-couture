@@ -4,23 +4,23 @@ const footerNav = [
   {
     heading: "About",
     links: [
-      { label: "経営理念", href: "/#about" },
-      { label: "私たちについて", href: "/#about" },
-      { label: "オーナー経歴", href: "/#about" },
+      { label: "経営理念 (Philosophy)", href: "/#about" },
+      { label: "私たちについて (About Us)", href: "/#about" },
+      { label: "オーナー経歴 (Owner)", href: "/#about" },
     ],
   },
   {
     heading: "Service",
     links: [
-      { label: "ラインナップ", href: "/lineup" },
-      { label: "ファブリック", href: "/fabric" },
-      { label: "ご注文ガイド", href: "/guide" },
+      { label: "ラインナップ (Lineup)", href: "/lineup" },
+      { label: "ファブリック (Fabric)", href: "/fabric" },
+      { label: "ご注文ガイド (Order Guide)", href: "/guide" },
     ],
   },
   {
     heading: "Gallery",
     links: [
-      { label: "仕立て事例", href: "/case" },
+      { label: "仕立て事例 (Gallery)", href: "/case" },
       { label: "Instagram", href: "https://www.instagram.com/yuma.nishinami" },
     ],
   },
@@ -46,8 +46,8 @@ export default function Footer() {
               <p>出張型オーダースーツサロン</p>
             </div>
             <div className="mt-6 text-xs space-y-2 text-gray-500">
-              <p>〒000-0000 福岡県○○市○○ 0-0-0</p>
-              <p>TEL: 000-0000-0000</p>
+              <p>〒813-0041 福岡県福岡市東区水谷3-11-32</p>
+              <p>TEL: 080-3973-4094</p>
               <p>営業時間: 10:00〜19:00（不定休）</p>
               <p>完全予約制</p>
             </div>

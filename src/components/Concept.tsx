@@ -105,7 +105,7 @@ export default function About() {
           <p className="text-xs tracking-widest text-primary uppercase mb-3 text-center">
             Our Belief
           </p>
-          <h3 className="text-2xl md:text-3xl font-serif font-light leading-relaxed mb-8 text-gray-800 text-center">
+          <h3 className="text-lg md:text-3xl font-serif font-light leading-relaxed mb-8 text-gray-800 text-center whitespace-nowrap">
             なぜ、テーラードファッションなのか
           </h3>
           <div className="space-y-5 text-gray-600 leading-relaxed text-sm">

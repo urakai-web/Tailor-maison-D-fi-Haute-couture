@@ -74,9 +74,12 @@ export default function LineUpShirt() {
               <h4 className="text-lg font-serif font-light text-gray-800 mb-4">
                 デザイン（Design）
               </h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed mb-6">
                 衿型のデザインは30種類以上、カフス型は10種類以上の中から選択が可能。
               </p>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/shirt-cuffs-type.jpg" alt="カフス型" className="w-full h-full object-cover" />
+              </div>
             </div>
             <div className="bg-warm-50 p-8 fade-in-up">
               <h4 className="text-lg font-serif font-light text-gray-800 mb-4">

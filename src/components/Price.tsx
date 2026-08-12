@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 const standardFeatures = [
-  { name: "ボタン各種（ホーン・シェル・ナット）", image: "/images/price/button.jpg" },
+  { name: "ボタン各種（ホーン・シェル・ナット）", image: "/images/price-button.jpg" },
   { name: "キュプラ裏地", image: "/images/price/cupra.jpg" },
   { name: "AMFステッチ", image: "/images/price/amf.jpg" },
   { name: "本切羽", image: "/images/price/honsetsu.png" },
