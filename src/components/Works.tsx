@@ -96,11 +96,11 @@ export default function CaseSection() {
               : {};
             return (
               <Wrapper key={item.id} className="cursor-pointer" {...linkProps}>
-                <div className="overflow-hidden aspect-square">
+                <div className="overflow-hidden aspect-[3/4]">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="mt-2">
