@@ -102,12 +102,12 @@ export default function LineUpTie() {
                     index % 2 === 1 ? "md:grid-flow-col-dense" : ""
                   }`}
                 >
-                  <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
+                  <div className={`order-2 md:order-none ${index % 2 === 1 ? "md:col-start-2" : ""}`}>
                     <div className="aspect-[4/3] overflow-hidden">
                       <img src={detail.image} alt={detail.title} className="w-full h-full object-cover" />
                     </div>
                   </div>
-                  <div className={index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}>
+                  <div className={`order-1 md:order-none ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`}>
                     <h4 className="text-lg font-serif font-light text-gray-800">
                       {detail.title}
                     </h4>
@@ -149,9 +149,6 @@ export default function LineUpTie() {
 
           {/* Gift */}
           <div className="bg-warm-50 fade-in-up">
-            <div className="aspect-[4/3] overflow-hidden">
-              <img src="/images/tie-gift.jpg" alt="ネクタイギフト" className="w-full h-full object-cover" />
-            </div>
             <div className="p-8">
               <h4 className="text-lg font-serif font-light text-gray-800 mb-4">
                 ギフト（GIFT）
@@ -159,6 +156,9 @@ export default function LineUpTie() {
               <p className="text-sm text-gray-600 leading-relaxed">
                 オーダーネクタイは、プレゼント用でも人気がございます。プレゼントする方を思い浮かべ、オリジナルのネクタイをオーダーしてみませんか？また、プレゼントの場合、専用のギフトボックスをご用意いたします。お気軽にご相談ください。
               </p>
+            </div>
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src="/images/tie-gift.jpg" alt="ネクタイギフト" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
