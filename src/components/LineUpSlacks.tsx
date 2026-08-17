@@ -46,15 +46,15 @@ export default function LineUpSlacks() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 mt-16 fade-in-up">
-            <div className="aspect-[4/3] overflow-hidden">
-              <img src="/images/slacks-detail1.jpg" alt="スラックス詳細1" className="w-full h-full object-cover" />
+          <div className="flex overflow-x-auto gap-4 mt-16 snap-x snap-mandatory md:grid md:grid-cols-3 fade-in-up" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+              <img src="/images/slacks-detail1.jpg" alt="スラックス詳細1" className="w-full h-full object-contain" />
             </div>
-            <div className="aspect-[4/3] overflow-hidden">
-              <img src="/images/slacks-detail2.jpg" alt="スラックス詳細2" className="w-full h-full object-cover" />
+            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+              <img src="/images/slacks-detail2.jpg" alt="スラックス詳細2" className="w-full h-full object-contain" />
             </div>
-            <div className="aspect-[4/3] overflow-hidden">
-              <img src="/images/slacks-detail3.jpg" alt="スラックス詳細3" className="w-full h-full object-cover" />
+            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+              <img src="/images/slacks-detail3.jpg" alt="スラックス詳細3" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>

@@ -69,27 +69,12 @@ export default function LineUpTshirt() {
 
           {/* Gallery */}
           <div className="mb-16 fade-in-up">
-            <div className="grid grid-cols-3 gap-4 mb-4">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/tshirt-2.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/tshirt-3.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/tshirt-4.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
-              </div>
-            </div>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/tshirt-5.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/tshirt-6.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/tshirt-7.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
-              </div>
+            <div className="flex overflow-x-auto gap-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-4 mb-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+              {[2,3,4,5,6,7].map((n) => (
+                <div key={n} className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+                  <img src={`/images/tshirt-${n}.jpg`} alt="オーダーTシャツ" className="w-full h-full object-contain" />
+                </div>
+              ))}
             </div>
           </div>
 
