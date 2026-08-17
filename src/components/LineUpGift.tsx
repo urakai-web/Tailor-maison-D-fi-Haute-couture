@@ -78,6 +78,11 @@ export default function LineUpGift() {
             </p>
           </div>
 
+          {/* Gift ticket image */}
+          <div className="mb-16 fade-in-up">
+            <img src="/images/gift-ticket.jpg" alt="お仕立て券" className="w-full h-auto" />
+          </div>
+
           {/* Price */}
           <div className="fade-in-up">
             <h4 className="text-center text-lg font-serif font-light text-gray-800 mb-6">

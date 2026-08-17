@@ -130,12 +130,12 @@ export default function LineUpBelt() {
                   index % 2 === 1 ? "md:grid-flow-col-dense" : ""
                 }`}
               >
-                <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
+                <div className={`order-2 md:order-none ${index % 2 === 1 ? "md:col-start-2" : ""}`}>
                   <div className="aspect-[4/3] overflow-hidden">
                     <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                   </div>
                 </div>
-                <div className={index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}>
+                <div className={`order-1 md:order-none ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`}>
                   <h4 className="text-lg font-serif font-light text-gray-800">
                     {item.name}
                   </h4>
