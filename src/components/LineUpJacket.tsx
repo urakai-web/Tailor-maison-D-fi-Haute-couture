@@ -44,13 +44,13 @@ export default function LineUpJacket() {
           </div>
 
           <div className="flex overflow-x-auto gap-4 mt-16 snap-x snap-mandatory md:grid md:grid-cols-3 fade-in-up" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
-            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
               <img src="/images/jacket-detail1.jpg" alt="ジャケット詳細1" className="w-full h-full object-contain" />
             </div>
-            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
               <img src="/images/jacket-detail2.jpg" alt="ジャケット詳細2" className="w-full h-full object-contain" />
             </div>
-            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
               <img src="/images/jacket-detail3.jpg" alt="ジャケット詳細3" className="w-full h-full object-contain" />
             </div>
           </div>

@@ -71,7 +71,7 @@ export default function LineUpTshirt() {
           <div className="mb-16 fade-in-up">
             <div className="flex overflow-x-auto gap-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-4 mb-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
               {[2,3,4,5,6,7].map((n) => (
-                <div key={n} className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden bg-gray-50">
+                <div key={n} className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
                   <img src={`/images/tshirt-${n}.jpg`} alt="オーダーTシャツ" className="w-full h-full object-contain" />
                 </div>
               ))}
