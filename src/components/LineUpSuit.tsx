@@ -165,14 +165,14 @@ export default function LineUpSuit() {
             </div>
 
             <div className="flex overflow-x-auto gap-4 mb-12 snap-x snap-mandatory md:grid md:grid-cols-3" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
-              <div className="flex-none w-[72vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-                <img src="/images/suit-detail1.jpg" alt="細部へのこだわり1" className="w-full h-full object-cover" />
+              <div className="flex-none w-[80vw] md:w-auto snap-start overflow-hidden">
+                <img src="/images/suit-detail1.jpg" alt="細部へのこだわり1" className="w-full h-auto" />
               </div>
-              <div className="flex-none w-[72vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-                <img src="/images/suit-detail2.jpg" alt="細部へのこだわり2" className="w-full h-full object-cover" />
+              <div className="flex-none w-[80vw] md:w-auto snap-start overflow-hidden">
+                <img src="/images/suit-detail2.jpg" alt="細部へのこだわり2" className="w-full h-auto" />
               </div>
-              <div className="flex-none w-[72vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-                <img src="/images/suit-detail3.jpg" alt="細部へのこだわり3" className="w-full h-full object-cover" />
+              <div className="flex-none w-[80vw] md:w-auto snap-start overflow-hidden">
+                <img src="/images/suit-detail3.jpg" alt="細部へのこだわり3" className="w-full h-auto" />
               </div>
             </div>
 
