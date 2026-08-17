@@ -164,14 +164,14 @@ export default function LineUpSuit() {
               <div className="w-12 h-px bg-accent mx-auto mt-4" />
             </div>
 
-            <div className="grid grid-cols-3 gap-4 mb-12">
-              <div className="aspect-[4/3] overflow-hidden">
+            <div className="flex overflow-x-auto gap-4 mb-12 snap-x snap-mandatory md:grid md:grid-cols-3" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+              <div className="flex-none w-[72vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
                 <img src="/images/suit-detail1.jpg" alt="細部へのこだわり1" className="w-full h-full object-cover" />
               </div>
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="flex-none w-[72vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
                 <img src="/images/suit-detail2.jpg" alt="細部へのこだわり2" className="w-full h-full object-cover" />
               </div>
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="flex-none w-[72vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
                 <img src="/images/suit-detail3.jpg" alt="細部へのこだわり3" className="w-full h-full object-cover" />
               </div>
             </div>

@@ -141,9 +141,9 @@ export default function LineUpShirt() {
                     </div>
                   </div>
                   {(fabric as any).subImages && (
-                    <div className={`grid gap-3 mt-6 ${(fabric as any).subImages.length === 4 ? "grid-cols-4" : "grid-cols-3"}`}>
+                    <div className={`flex overflow-x-auto gap-3 mt-6 pb-0 snap-x snap-mandatory scrollbar-hide md:grid md:pb-0 ${(fabric as any).subImages.length === 4 ? "md:grid-cols-4" : "md:grid-cols-3"}`} style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
                       {(fabric as any).subImages.map((img: string, i: number) => (
-                        <div key={i} className="aspect-[4/3] overflow-hidden">
+                        <div key={i} className="flex-none w-[72vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
                           <img src={img} alt={`${fabric.name} ${i + 1}`} className="w-full h-full object-cover" />
                         </div>
                       ))}
