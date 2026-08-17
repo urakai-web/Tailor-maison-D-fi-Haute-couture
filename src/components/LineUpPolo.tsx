@@ -82,6 +82,15 @@ export default function LineUpPolo() {
           <p className="text-sm text-gray-600 text-center leading-relaxed fade-in-up">
             「もしかして、ワイシャツのときよりピシッとしてるかも。」そう実感できる、あなただけの特別な一着をご提案致します。
           </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mt-12 fade-in-up">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src="/images/polo-detail1.jpg" alt="ポロシャツ詳細1" className="w-full h-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src="/images/polo-detail2.jpg" alt="ポロシャツ詳細2" className="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

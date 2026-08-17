@@ -11,16 +11,16 @@ const standardFeatures = [
 ];
 
 const priceItems = [
-  { name: "2Pスーツ", price: "¥60,000", tax: "税込66,000", image: "/images/lineup-suit.jpg" },
-  { name: "3Pスーツ", price: "¥75,000", tax: "税込82,500", image: "/images/vest-three-piece.jpg" },
-  { name: "ジャケット", price: "¥40,000", tax: "税込44,000", image: "/images/lineup-jacket.jpg" },
+  { name: "2Pスーツ", price: "¥60,000", tax: "税込66,000", image: "/images/price-suit2p.jpg" },
+  { name: "3Pスーツ", price: "¥75,000", tax: "税込82,500", image: "/images/price-suit3p.jpg" },
+  { name: "ジャケット", price: "¥40,000", tax: "税込44,000", image: "/images/price-jacket.jpg" },
   { name: "スラックス", price: "¥27,000", tax: "税込29,700", image: "/images/lineup-slacks.jpg" },
   { name: "ベスト", price: "¥24,000", tax: "税込26,400", image: "/images/lineup-vest.jpg" },
   { name: "シャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-shirt.jpg" },
   { name: "ネクタイ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-tie.jpg", objectPosition: "right top" },
   { name: "コート", price: "¥70,000", tax: "税込77,000", image: "/images/lineup-coat.jpg", objectPosition: "top" },
   { name: "ドレスTシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-tshirt.jpg" },
-  { name: "ポロシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-polo.jpg" },
+  { name: "ポロシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/price-polo.jpg" },
   { name: "ベルト", price: "¥15,000", tax: "税込16,500", image: "/images/lineup-belt.jpg" },
 ];
 
@@ -55,7 +55,7 @@ export default function Price() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/lineup-suit.jpg"
+                  src="/images/price-hero.jpg"
                   alt="オーダースーツ"
                   className="w-full h-full object-cover"
                 />

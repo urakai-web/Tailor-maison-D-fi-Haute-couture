@@ -148,13 +148,18 @@ export default function LineUpTie() {
           </div>
 
           {/* Gift */}
-          <div className="bg-warm-50 p-8 fade-in-up">
-            <h4 className="text-lg font-serif font-light text-gray-800 mb-4">
-              ギフト（GIFT）
-            </h4>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              オーダーネクタイは、プレゼント用でも人気がございます。プレゼントする方を思い浮かべ、オリジナルのネクタイをオーダーしてみませんか？また、プレゼントの場合、専用のギフトボックスをご用意いたします。お気軽にご相談ください。
-            </p>
+          <div className="bg-warm-50 fade-in-up">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src="/images/tie-gift.jpg" alt="ネクタイギフト" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-8">
+              <h4 className="text-lg font-serif font-light text-gray-800 mb-4">
+                ギフト（GIFT）
+              </h4>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                オーダーネクタイは、プレゼント用でも人気がございます。プレゼントする方を思い浮かべ、オリジナルのネクタイをオーダーしてみませんか？また、プレゼントの場合、専用のギフトボックスをご用意いたします。お気軽にご相談ください。
+              </p>
+            </div>
           </div>
         </div>
       </div>

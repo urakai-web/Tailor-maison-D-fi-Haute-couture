@@ -3,18 +3,36 @@ import { useEffect, useRef } from "react";
 const shirtFabrics = [
   {
     name: "トーマス・メイソン（THOMAS MASON）",
-    description: "1796年に英国のランカシャーで創業した世界最高峰のシャツ生地ブランド。",
+    description: "1796年に英国のランカシャーで創業した世界最高峰のシャツ生地ブランド。エジプト産の超長綿を使用した上品な光沢と滑らかな肌触りは、世界中のシャツ職人から支持されています。細番手でありながら耐久性にも優れ、着込むほどに風合いが増すのが特徴です。",
     image: "/images/shirt-thomas-mason.jpg",
+    subImages: [
+      "/images/shirt-thomas2.jpg",
+      "/images/shirt-thomas3.jpg",
+      "/images/shirt-thomas4.jpg",
+      "/images/shirt-thomas5.jpg",
+    ],
   },
   {
     name: "アルビニ（Albini）",
-    description: "トーマス・メイソン（THOMAS MASON）も傘下に抱える世界最大のシャツ生地メーカー。",
+    description: "トーマス・メイソン（THOMAS MASON）も傘下に抱える世界最大のシャツ生地メーカー。イタリア・ベルガモに本社を置き、150年以上の歴史を誇ります。オックスフォード、ポプリン、ツイルなど豊富な素材バリエーションと、季節を問わず快適な着心地が魅力です。",
     image: "/images/shirt-albini.jpg",
+    subImages: [
+      "/images/shirt-albini2.jpg",
+      "/images/shirt-albini3.jpg",
+      "/images/shirt-albini4.jpg",
+    ],
   },
   {
     name: "リバティ（LIBERTY）",
-    description: "ロンドンの老舗百貨店『リバティ』が手がけるテキスタイルブランド。超長綿を使用したシルクタッチが特徴のタナローン（Tana Lawn）生地や唯一無二の繊細なプリントデザインが有名です。",
+    description: "ロンドンの老舗百貨店『リバティ』が手がけるテキスタイルブランド。超長綿を使用したシルクタッチが特徴のタナローン（Tana Lawn）生地や唯一無二の繊細なプリントデザインが有名です。植物・花・幾何学模様など、芸術性の高いパターンは、装いに個性と華やかさを添えます。",
     image: "/images/shirt-liberty.jpg",
+    subImages: [
+      "/images/shirt-liberty2.jpg",
+      "/images/shirt-liberty3.jpg",
+      "/images/shirt-liberty4.jpg",
+      "/images/shirt-liberty5.jpg",
+      "/images/shirt-liberty6.jpg",
+    ],
   },
 ];
 
@@ -102,25 +120,35 @@ export default function LineUpShirt() {
 
             <div className="space-y-16">
               {shirtFabrics.map((fabric, index) => (
-                <div
-                  key={fabric.name}
-                  className={`fade-in-up grid md:grid-cols-2 gap-12 items-center ${
-                    index % 2 === 1 ? "md:grid-flow-col-dense" : ""
-                  }`}
-                >
-                  <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img src={fabric.image} alt={fabric.name} className="w-full h-full object-cover" />
+                <div key={fabric.name} className="fade-in-up">
+                  <div
+                    className={`grid md:grid-cols-2 gap-12 items-center ${
+                      index % 2 === 1 ? "md:grid-flow-col-dense" : ""
+                    }`}
+                  >
+                    <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img src={fabric.image} alt={fabric.name} className="w-full h-full object-cover" />
+                      </div>
+                    </div>
+                    <div className={index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}>
+                      <h5 className="text-lg font-serif font-light text-gray-800 mb-4">
+                        {fabric.name}
+                      </h5>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {fabric.description}
+                      </p>
                     </div>
                   </div>
-                  <div className={index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}>
-                    <h5 className="text-lg font-serif font-light text-gray-800 mb-4">
-                      {fabric.name}
-                    </h5>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {fabric.description}
-                    </p>
-                  </div>
+                  {(fabric as any).subImages && (
+                    <div className={`grid gap-3 mt-6 ${(fabric as any).subImages.length === 4 ? "grid-cols-4" : "grid-cols-3"}`}>
+                      {(fabric as any).subImages.map((img: string, i: number) => (
+                        <div key={i} className="aspect-[4/3] overflow-hidden">
+                          <img src={img} alt={`${fabric.name} ${i + 1}`} className="w-full h-full object-cover" />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

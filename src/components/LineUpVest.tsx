@@ -69,8 +69,8 @@ export default function LineUpVest() {
           {/* 2. オッドベスト */}
           <div className="grid md:grid-cols-2 gap-16 items-center fade-in-up">
             <div className="md:order-2 relative">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/vest-odd.jpg" alt="オッドベスト" className="w-full h-full object-cover" />
+              <div className="aspect-[3/4] overflow-hidden bg-gray-50">
+                <img src="/images/vest-odd.jpg" alt="オッドベスト" className="w-full h-full object-contain" />
               </div>
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-accent -z-10" />
             </div>

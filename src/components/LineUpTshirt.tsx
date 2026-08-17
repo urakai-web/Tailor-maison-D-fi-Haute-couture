@@ -67,6 +67,32 @@ export default function LineUpTshirt() {
             </div>
           </div>
 
+          {/* Gallery */}
+          <div className="mb-16 fade-in-up">
+            <div className="grid grid-cols-3 gap-4 mb-4">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/tshirt-2.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/tshirt-3.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/tshirt-4.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-4">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/tshirt-5.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/tshirt-6.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/tshirt-7.jpg" alt="オーダーTシャツ" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+
           {/* Features */}
           <div className="max-w-3xl mx-auto space-y-5 text-sm text-gray-600 leading-relaxed fade-in-up">
             <p>

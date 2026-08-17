@@ -5,19 +5,19 @@ const suitStyles = [
     name: "Italian classico style",
     description:
       "クラシカルなイタリアンモデル。英国モデルのような、かっちりとした印象とは違い、柔らかな印象。緩やかなドロップショルダー。丸みのあるシルエットが特徴的。遊び心のあるエレガンスなスタイル。30代〜幅広い年齢層の方に人気です。",
-    image: "/images/lineup-suit.jpg", // TODO: Italian classico style用の画像に差し替え
+    image: "/images/suit-italian.jpg",
   },
   {
     name: "British style",
     description:
       "英国ブリテッシュラインを基軸に、肩先を盛り上げたビルドアップショルダーを採用。前裾を大きく切り落としたカッタウェイフロントにする事で立体感を出しつつ、胸から裾にかけて、体に沿いながら流線を作っている。",
-    image: "/images/lineup-suit.jpg", // TODO: British style用の画像に差し替え
+    image: "/images/suit-british.jpg",
   },
   {
     name: "Casual style",
     description:
       "基本的には、全てのモデルでの対応が可能。アウトポケットや腰紐付きのウエストゴムパンツ、スポーティージャケットなどの特殊モデルまで対応しております。",
-    image: "/images/lineup-suit.jpg", // TODO: Casual style用の画像に差し替え
+    image: "/images/suit-casual.jpg",
   },
 ];
 
@@ -162,6 +162,18 @@ export default function LineUpSuit() {
               </h3>
               <p className="text-xs text-gray-400 mt-1">細部へのこだわり</p>
               <div className="w-12 h-px bg-accent mx-auto mt-4" />
+            </div>
+
+            <div className="grid grid-cols-3 gap-4 mb-12">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/suit-detail1.jpg" alt="細部へのこだわり1" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/suit-detail2.jpg" alt="細部へのこだわり2" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/images/suit-detail3.jpg" alt="細部へのこだわり3" className="w-full h-full object-cover" />
+              </div>
             </div>
 
             <div className="space-y-5 text-sm text-gray-600 leading-relaxed max-w-3xl mx-auto">

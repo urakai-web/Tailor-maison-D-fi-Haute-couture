@@ -45,6 +45,18 @@ export default function LineUpSlacks() {
               </p>
             </div>
           </div>
+
+          <div className="grid grid-cols-3 gap-4 mt-16 fade-in-up">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src="/images/slacks-detail1.jpg" alt="スラックス詳細1" className="w-full h-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src="/images/slacks-detail2.jpg" alt="スラックス詳細2" className="w-full h-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src="/images/slacks-detail3.jpg" alt="スラックス詳細3" className="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
