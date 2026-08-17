@@ -6,7 +6,7 @@ const footerNav = [
     links: [
       { label: "経営理念 (Philosophy)", href: "/#about" },
       { label: "私たちについて (About Us)", href: "/#about" },
-      { label: "オーナー経歴 (Owner)", href: "/#about" },
+      { label: "代表者経歴 (Representative)", href: "/#about" },
     ],
   },
   {
@@ -46,7 +46,7 @@ export default function Footer() {
               <p>出張型オーダースーツサロン</p>
             </div>
             <div className="mt-6 text-xs space-y-2 text-gray-500">
-              <p>〒813-0041 福岡県福岡市東区水谷3-11-32</p>
+              <p>〒813-0041 福岡県福岡市東区水谷</p>
               <p>TEL: 080-3973-4094</p>
               <p>営業時間: 10:00〜19:00（不定休）</p>
               <p>完全予約制</p>

@@ -6,22 +6,29 @@ const tieDetails = [
     titleEn: "Silhouette",
     description:
       "ノットやディンプルが作りやすいように、誰でも簡単に美しく結べるように、胸元にあたるシルエットで設計させているのが特徴です。\n\n既成のネクタイは、ストレートに近い型が多いですが、Tailor maison Défi（テーラーメゾンディフィ）では、つけた後のシルエットが美しくなるように、首元部分から大剣にかけゆるやかなS字を描くボトル型のシルエットを推奨しております。\n\nこの曲線の位置や幅を体型にあわせて、調整していますので、胸元はふわっと、ノットはきゅっとしまったネクタイとして、理想的な美しいシルエットが描けるようになっています。",
-    image: "/images/lineup-suit.jpg", // TODO: シルエット用の画像に差し替え
+    image: "/images/tie-silhouette.jpg",
   },
   {
     title: "結びやすさ",
     titleEn: "Easy to Tie",
     description:
       "この結び易さをサポートするのが、100%のウール芯と、結び始めが分かるココムスポイントです。\n\n一般的なネクタイに使用される化繊の芯に比べて、ウール芯は柔らかいためネクタイがスムーズにしまり、ノットが綺麗に整います。\n\nココムスポイントは、ネクタイを結び始める際に大剣と小剣を交差する目安となるポイントです。このポイントを基準に結んで頂けると、結び上がりの長さが丁度ベルト付近にくるので結び直さなくて済みますよというポイントになっています。",
-    image: "/images/lineup-suit.jpg", // TODO: 結びやすさ用の画像に差し替え
+    image: "/images/tie-easy.jpg",
   },
   {
     title: "セッテピエゲ・ディエチピエゲ",
     titleEn: "Sette Pieghe / Dieci Pieghe",
     description:
       "セッテピエゲ・ディエチピエゲとは、芯が入っていないネクタイです。芯の代わりに、表地を何層にも織り込んで仕立て上げていきます。生地を折り畳む回数がそれぞれ異なります。\n\nセッテピエゲ・ディエチピエゲを縫製できる職人がいる工房は国内でもかなり希少です。通常のネクタイと比べ約２倍の生地を使い、生地を何回も折り返すことからうまくネクタイの形に折り込めるよう型を設計することがとても大事になるからです。最難易度のネクタイと言っても過言ではありません。\n\n最大の魅力は、芯がないため結んだ際、生地のはりに応じて自然なしわが入り、通常のネクタイ以上に、深みのあるディンプルに仕上がります。",
-    image: "/images/lineup-suit.jpg", // TODO: セッテピエゲ用の画像に差し替え
+    image: "/images/tie-sette.jpg",
+    extraImage: "/images/tie-sette-top.jpg",
   },
+];
+
+const uniformItems = [
+  { title: "ユニフォーム", titleEn: "Uniform", image: "/images/tie-uniform.jpg" },
+  { title: "リボン", titleEn: "Ribbon", image: "/images/tie-ribbon.jpg" },
+  { title: "特殊タイ", titleEn: "Special Tie", image: "/images/tie-special.jpg" },
 ];
 
 export default function LineUpTie() {
@@ -60,7 +67,7 @@ export default function LineUpTie() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/lineup-suit.jpg" // TODO: ネクタイメイン画像に差し替え
+                  src="/images/tie-mij.jpg"
                   alt="オーダーネクタイ"
                   className="w-full h-full object-cover"
                 />
@@ -89,53 +96,65 @@ export default function LineUpTie() {
           {/* Details */}
           <div className="space-y-16 mb-20">
             {tieDetails.map((detail, index) => (
-              <div
-                key={detail.title}
-                className={`fade-in-up grid md:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "md:grid-flow-col-dense" : ""
-                }`}
-              >
-                <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img src={detail.image} alt={detail.title} className="w-full h-full object-cover" />
+              <div key={detail.title} className="fade-in-up">
+                <div
+                  className={`grid md:grid-cols-2 gap-12 items-center ${
+                    index % 2 === 1 ? "md:grid-flow-col-dense" : ""
+                  }`}
+                >
+                  <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img src={detail.image} alt={detail.title} className="w-full h-full object-cover" />
+                    </div>
                   </div>
-                </div>
-                <div className={index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}>
-                  <h4 className="text-lg font-serif font-light text-gray-800">
-                    {detail.title}
-                  </h4>
-                  <p className="text-xs text-accent tracking-wide mb-4">
-                    {detail.titleEn}
-                  </p>
-                  <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">
-                    {detail.description}
-                  </p>
+                  <div className={index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}>
+                    <h4 className="text-lg font-serif font-light text-gray-800">
+                      {detail.title}
+                    </h4>
+                    <p className="text-xs text-accent tracking-wide mb-4">
+                      {detail.titleEn}
+                    </p>
+                    <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">
+                      {detail.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Uniform / Gift */}
-          <div className="grid md:grid-cols-2 gap-12 fade-in-up">
-            <div className="bg-warm-50 p-8">
-              <h4 className="text-lg font-serif font-light text-gray-800 mb-4">
+          {/* Uniform / Ribbon / Special Tie */}
+          <div className="mb-16 fade-in-up">
+            <div className="text-center mb-8">
+              <h4 className="text-lg font-serif font-light text-gray-800">
                 ユニフォーム・リボン・特殊タイ
-                <span className="block text-xs text-accent tracking-wide mt-1">
-                  Uniform / Ribbon / Special Tie
-                </span>
               </h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                国内有数の大企業の制服で使用されるネクタイや衣装を担っている工房です。制服や衣装としてご利用の際もぜひ御相談ください。
-              </p>
+              <p className="text-xs text-accent tracking-wide mt-1">Uniform / Ribbon / Special Tie</p>
             </div>
-            <div className="bg-warm-50 p-8">
-              <h4 className="text-lg font-serif font-light text-gray-800 mb-4">
-                ギフト（GIFT）
-              </h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                オーダーネクタイは、プレゼント用でも人気がございます。プレゼントする方を思い浮かべ、オリジナルのネクタイをオーダーしてみませんか？また、プレゼントの場合、専用のギフトボックスをご用意いたします。お気軽にご相談ください。
-              </p>
+            <div className="grid md:grid-cols-3 gap-8">
+              {uniformItems.map((item) => (
+                <div key={item.title}>
+                  <div className="aspect-[4/3] overflow-hidden mb-4">
+                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                  </div>
+                  <p className="text-sm font-serif font-light text-gray-800 text-center">{item.title}</p>
+                  <p className="text-xs text-accent tracking-wide text-center mt-1">{item.titleEn}</p>
+                </div>
+              ))}
             </div>
+            <p className="text-sm text-gray-600 leading-relaxed mt-6 text-center">
+              国内有数の大企業の制服で使用されるネクタイや衣装を担っている工房です。制服や衣装としてご利用の際もぜひ御相談ください。
+            </p>
+          </div>
+
+          {/* Gift */}
+          <div className="bg-warm-50 p-8 fade-in-up">
+            <h4 className="text-lg font-serif font-light text-gray-800 mb-4">
+              ギフト（GIFT）
+            </h4>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              オーダーネクタイは、プレゼント用でも人気がございます。プレゼントする方を思い浮かべ、オリジナルのネクタイをオーダーしてみませんか？また、プレゼントの場合、専用のギフトボックスをご用意いたします。お気軽にご相談ください。
+            </p>
           </div>
         </div>
       </div>

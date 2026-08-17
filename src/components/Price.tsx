@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 
 const standardFeatures = [
   { name: "ボタン各種（ホーン・シェル・ナット）", image: "/images/price-button.jpg" },
-  { name: "キュプラ裏地", image: "/images/price/cupra.jpg" },
+  { name: "キュプラ裏地", image: "/images/price-cupra.jpg" },
   { name: "AMFステッチ", image: "/images/price/amf.jpg" },
-  { name: "本切羽", image: "/images/price/honsetsu.png" },
-  { name: "ネーム入れ", image: "/images/price/name.jpg" },
-  { name: "ピークドラペル", image: "/images/price/peaked-lapel.jpg" },
-  { name: "ラペル幅変更", image: "/images/price/lapel-width.jpg" },
+  { name: "本切羽", image: "/images/price-honsetsu.jpg" },
+  { name: "ネーム入れ", image: "/images/price-name.jpg" },
+  { name: "ピークドラペル", image: "/images/price/peaked-lapel.jpg", objectTop: true },
+  { name: "ラペル幅変更", image: "/images/price-lapel-width.jpg" },
 ];
 
 const priceItems = [
@@ -17,8 +17,8 @@ const priceItems = [
   { name: "スラックス", price: "¥27,000", tax: "税込29,700", image: "/images/lineup-slacks.jpg" },
   { name: "ベスト", price: "¥24,000", tax: "税込26,400", image: "/images/lineup-vest.jpg" },
   { name: "シャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-shirt.jpg" },
-  { name: "ネクタイ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-others.jpg" },
-  { name: "コート", price: "¥70,000", tax: "税込77,000", image: "/images/lineup-coat.jpg" },
+  { name: "ネクタイ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-tie.jpg", objectPosition: "right top" },
+  { name: "コート", price: "¥70,000", tax: "税込77,000", image: "/images/lineup-coat.jpg", objectPosition: "top" },
   { name: "ドレスTシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-tshirt.jpg" },
   { name: "ポロシャツ", price: "¥13,000", tax: "税込14,300", image: "/images/lineup-polo.jpg" },
   { name: "ベルト", price: "¥15,000", tax: "税込16,500", image: "/images/lineup-belt.jpg" },
@@ -106,7 +106,7 @@ export default function Price() {
                   <img
                     src={feature.image}
                     alt={feature.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105${(feature as any).objectTop ? " object-top" : ""}`}
                   />
                 </div>
                 <p className="text-xs text-gray-700 text-center mt-3 leading-relaxed">
@@ -141,6 +141,7 @@ export default function Price() {
                     src={item.image}
                     alt={item.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={(item as any).objectPosition ? { objectPosition: (item as any).objectPosition } : undefined}
                   />
                 </div>
                 <div className="flex-1 py-4 pr-4">

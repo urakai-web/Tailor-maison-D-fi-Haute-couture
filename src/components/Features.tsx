@@ -36,6 +36,7 @@ const lineupItems = [
     description: "上質な素材で仕立てるオーダーコート。",
     image: "/images/lineup-coat.jpg",
     href: "/lineup/coat",
+    objectTop: true,
   },
   {
     title: "ジレ・ベスト",
@@ -48,7 +49,7 @@ const lineupItems = [
     title: "ネクタイ",
     subtitle: "Tie",
     description: "国内老舗工房によるハンドメイドネクタイ。",
-    image: "/images/lineup-others.jpg", // TODO: ネクタイ用の画像に差し替え
+    image: "/images/lineup-tie.jpg",
     href: "/lineup/tie",
   },
   {
@@ -125,7 +126,7 @@ export default function LineUp() {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105${(item as any).objectTop ? " object-top" : ""}`}
                 />
               </div>
               <div className="mt-4 text-center">

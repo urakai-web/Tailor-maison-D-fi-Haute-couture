@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
-  { label: "私たちについて", href: "/#about" },
-  { label: "Lineup", href: "/lineup" },
-  { label: "Fabric", href: "/fabric" },
-  { label: "Price", href: "/price" },
-  { label: "Order", href: "/guide" },
-  { label: "仕立て事例", href: "/case" },
+  { label: "私たちについて (About Us)", href: "/#about" },
+  { label: "ラインナップ (Lineup)", href: "/lineup" },
+  { label: "ファブリック (Fabric)", href: "/fabric" },
+  { label: "料金 (Price)", href: "/price" },
+  { label: "ご注文ガイド (Order)", href: "/guide" },
+  { label: "仕立て事例 (Gallery)", href: "/case" },
 ];
 
 export default function Header() {
