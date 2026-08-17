@@ -48,13 +48,13 @@ export default function LineUpSlacks() {
 
           <div className="flex overflow-x-auto gap-4 mt-16 snap-x snap-mandatory md:grid md:grid-cols-3 fade-in-up" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
             <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-              <img src="/images/slacks-detail1.jpg" alt="スラックス詳細1" className="w-full h-full object-contain" />
+              <img src="/images/slacks-detail1.jpg" alt="スラックス詳細1" className="w-full h-full object-cover" />
             </div>
             <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-              <img src="/images/slacks-detail2.jpg" alt="スラックス詳細2" className="w-full h-full object-contain" />
+              <img src="/images/slacks-detail2.jpg" alt="スラックス詳細2" className="w-full h-full object-cover" />
             </div>
             <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-              <img src="/images/slacks-detail3.jpg" alt="スラックス詳細3" className="w-full h-full object-contain" />
+              <img src="/images/slacks-detail3.jpg" alt="スラックス詳細3" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
