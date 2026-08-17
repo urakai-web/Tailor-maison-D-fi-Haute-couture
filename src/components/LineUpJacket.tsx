@@ -29,7 +29,7 @@ export default function LineUpJacket() {
           <div className="grid md:grid-cols-2 gap-16 items-center fade-in-up">
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/images/jacket-main.jpg" alt="ジャケット" className="w-full h-full object-cover" />
+                <img src="/images/jacket-main.jpg" alt="ジャケット" className="w-full h-auto" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent -z-10" />
             </div>
@@ -44,14 +44,14 @@ export default function LineUpJacket() {
           </div>
 
           <div className="flex overflow-x-auto gap-4 mt-16 snap-x snap-mandatory md:grid md:grid-cols-3 fade-in-up" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
-            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-              <img src="/images/jacket-detail1.jpg" alt="ジャケット詳細1" className="w-full h-full object-cover" />
+            <div className="flex-none w-[80vw] md:w-auto snap-start overflow-hidden">
+              <img src="/images/jacket-detail1.jpg" alt="ジャケット詳細1" className="w-full h-auto" />
             </div>
-            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-              <img src="/images/jacket-detail2.jpg" alt="ジャケット詳細2" className="w-full h-full object-cover" />
+            <div className="flex-none w-[80vw] md:w-auto snap-start overflow-hidden">
+              <img src="/images/jacket-detail2.jpg" alt="ジャケット詳細2" className="w-full h-auto" />
             </div>
-            <div className="flex-none w-[80vw] md:w-auto snap-start aspect-[4/3] overflow-hidden">
-              <img src="/images/jacket-detail3.jpg" alt="ジャケット詳細3" className="w-full h-full object-cover" />
+            <div className="flex-none w-[80vw] md:w-auto snap-start overflow-hidden">
+              <img src="/images/jacket-detail3.jpg" alt="ジャケット詳細3" className="w-full h-auto" />
             </div>
           </div>
         </div>
