@@ -65,7 +65,7 @@ export default function LineUpSuit() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/lineup-suit.jpg"
+                  src="/images/suit-main.jpg"
                   alt="オーダースーツ"
                   className="w-full h-full object-cover"
                 />
