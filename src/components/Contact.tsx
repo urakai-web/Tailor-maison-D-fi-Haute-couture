@@ -46,7 +46,7 @@ export default function Contact() {
 
         <div className="fade-in-up mt-10">
           <a
-            href="https://lin.ee/W2TBswv"
+            href="https://line.me/R/ti/p/%40089opzhz"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#06C755] text-white text-sm tracking-widest px-12 py-4 hover:bg-[#05b04c] transition-colors duration-300"

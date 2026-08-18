@@ -109,7 +109,7 @@ export default function Guide() {
                     )}
                     {step.cta && (
                       <a
-                        href="https://lin.ee/W2TBswv"
+                        href="https://line.me/R/ti/p/%40089opzhz"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block text-xs text-primary border-b border-primary pb-0.5 mt-3 hover:text-primary-dark hover:border-primary-dark transition-colors"

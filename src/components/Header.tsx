@@ -75,7 +75,7 @@ export default function Header() {
             )
           )}
           <a
-            href="https://lin.ee/W2TBswv"
+            href="https://line.me/R/ti/p/%40089opzhz"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm tracking-widest bg-primary text-white px-6 py-2.5 hover:bg-primary-dark transition-colors duration-300"
@@ -137,7 +137,7 @@ export default function Header() {
             )
           )}
           <a
-            href="https://lin.ee/W2TBswv"
+            href="https://line.me/R/ti/p/%40089opzhz"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}
